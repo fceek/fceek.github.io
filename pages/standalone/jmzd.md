@@ -1,10 +1,12 @@
+---
 layout: page
-title: "聚 魔 之 地"
-permalink: /pages/mhw/
+title:  "MHWI Cheatsheet"
+permalink: /standalone/
+---
 
 # **聚 魔 之 地**
 
-```plain text
+```
 为了方便受苦的魔法师们而总结的聚魔之地素材表
 善用CE
 善用Ctrl+F
