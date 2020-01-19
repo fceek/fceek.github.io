@@ -1,3 +1,7 @@
+layout: page
+title: "聚 魔 之 地"
+permalink: /pages/mhw/
+
 # **聚 魔 之 地**
 
 ```plain text
