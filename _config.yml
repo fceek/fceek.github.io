@@ -18,13 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Tango Island
+title: Flint Canyon
+author: FAN Chen
 email: fceek@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Starting.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "fceek.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: 
+instagram_username:  fceek
 github_username:  fceek
 
 # Build settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "MHWI Cheatsheet"
-permalink: /standalone/
+permalink: /standalone/jmzd.html
 ---
 
 # **聚 魔 之 地**
