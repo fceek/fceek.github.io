@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: standalone
 title:  "MHWI Cheatsheet"
 permalink: /standalone/jmzd.html
 ---
