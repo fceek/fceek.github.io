@@ -1,0 +1,12 @@
+img.primary {
+    width: 600px;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.doc-link {
+    background-color: #e5e5e5;
+    border: #000 1px solid;
+    padding: 4px;
+    font-size: 13px;
+}
