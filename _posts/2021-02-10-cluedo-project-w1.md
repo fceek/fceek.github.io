@@ -65,6 +65,13 @@ Python的命令随系统的不同会不一样，`py`是 *Windows Python Launcher
 
 除了Python本体之外，我们还需要 `pip` 工具来安装Python的其他组件，一般来说Python安装的时候会附带，同理使用 `pip --version` 可以查看其版本，目前的最新版本是21.0.1。
 
+---
+
+⚠ HOTFIX 1202: pip命令可能需要在前面加Python模块命令变成像 `py -m pip...` 一样才能正确运行。
+以及几乎不可能不附带pip，可以直接upgrade。
+
+---
+
 如果没有 **[- Reference](https://pip.pypa.io/en/stable/installing/)**
 ```
 install:
@@ -98,6 +105,13 @@ pytest --version
 
 要进行本地的Git版本控制，硬核程序员很多都直接使用Git Bash，即直接在命令行中与Git进行交互。
 但现阶段我推荐使用有GUI的Git工具，例如 [SourceTree](https://www.sourcetreeapp.com/) 或 [GitKraken](https://www.gitkraken.com/) 。这样可以免去记住Git命令、了解Git原理、不小心输错命令之类的麻烦（有些甚至是毁灭性的），当然如果你想要了解可以去看我很久之前发的这篇知乎专栏：[Missing Semester (六)：Version Control (Git)](https://zhuanlan.zhihu.com/p/139820055) ，结合[Git Bash的文档](https://git-scm.com/doc)就不用上面提到的工具了。
+
+---
+
+⚠ HOTFIX 1202: GitKraken需要验证学生邮箱才能免费使用，具体流程是给GitHub帐号绑定Sussex邮箱之后申请GitHub Education，之后按GitKraken官网提示。GitHub Education验证流程较长，一般需要等待一周，早申早快乐。
+
+---
+<br>
 
 ### Git Remote & Collab
 
@@ -140,7 +154,7 @@ pytest --version
 
 ---
 
-⚠ 项目中的Makefile文件是针对Windows环境下的nmake工具，以及batch语言编写的几个快捷方式/小工具，如果你使用Linux或OSX，暂时无法享受这条捷径。
+⚠ 项目中的Makefile文件是针对Windows环境下的nmake工具，以及batch语言编写的几个快捷方式/小工具，如果你使用Linux或OSX，再或者Windows下没有安装nmake工具，暂时无法享受这条捷径。
 
 ---
 
@@ -148,7 +162,7 @@ pytest --version
 
 ## 这周的主线任务
 
-配置完成环境及本地仓库之后
+配置完成环境及本地仓库之后，读一下README
 
 1. 跑一次单元测试，这应当会生成一个日志文件
 2. 在 `/docs/MissionAccomplished.md` 中起一新行，随便写点什么
