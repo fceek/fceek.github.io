@@ -10,3 +10,15 @@ img.primary {
     padding: 4px;
     font-size: 13px;
 }
+
+blockquote {
+    font-size: 16px;
+}
+
+tbody {
+    font-size: 12px;
+}
+
+.ref-link {
+    font-size: 14px;
+}
