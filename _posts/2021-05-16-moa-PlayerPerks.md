@@ -1,9 +1,7 @@
 ---
 layout: post
-title: "Master of Arms - Project notes"
+title: "Master of Arms - Player perks"
 ---
-
-# MoA - Player Perks Planning Document
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 

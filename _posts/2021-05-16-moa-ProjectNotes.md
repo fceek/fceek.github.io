@@ -3,8 +3,6 @@ layout: post
 title: "Master of Arms - Project notes"
 ---
 
-# Project Notes
-
 > For speed looking up things while writing the doc.
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
