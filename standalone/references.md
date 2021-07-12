@@ -3,6 +3,12 @@ layout: standalone
 title: "Reference List +"
 ---
 
+## Latest（Cotton）
+
+<a class="ref-link" href = "/assets/files/CottonPuzzle报告.pdf">简要总结</a>
+<br>
+<a class="ref-link" href = "/assets/files/Win.zip">Build(Windows)</a>
+
 ## Project
 
 <a class="ref-link" href = "https://github.com/fceek/Cluedo-SE21">🔗项目地址</a>
