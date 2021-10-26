@@ -1,0 +1,14 @@
+# Overrides for stellar theme
+
+language:
+  - zh-CN
+  - en
+
+sidebar:
+  logo:
+    title: '[<img no-lazy height = "64px" src="https://personalpageim.s3.eu-west-2.amazonaws.com/logo4.png"/>](/)'
+  menu:
+    post: '[Blog](/)'
+    wiki: '[Doc](/wiki/)'
+    notes: '[Ref.](/standalone/)'
+    more: '[About](/more/)'
