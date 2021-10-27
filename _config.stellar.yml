@@ -6,7 +6,7 @@ language:
 
 sidebar:
   logo:
-    title: '[<img no-lazy height = "64px" src="https://personalpageim.s3.eu-west-2.amazonaws.com/logo4.png"/>](/)'
+    title: '[<img no-lazy height = "64px" src="https://flintcanyon.s3.ap-southeast-1.amazonaws.com/logo4.png"/>](/)'
   menu:
     post: '[Blog](/)'
     wiki: '[Doc](/wiki/)'
