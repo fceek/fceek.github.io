@@ -1,0 +1,7 @@
+HPFramework:
+  title: HPFramework
+  subtitle: Quick start for lightweight Unity projects
+  tags: [Game, Unity]
+  cover: true
+  description: HeartPhase小组开发，供作业项目、GameJam和Prototyping使用的Unity项目框架。
+  repo: HeartPhase/HP-Unity-Bootstrap
