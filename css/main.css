@@ -3528,7 +3528,6 @@ div.swiper-slide img {
 img.primary {
   width: 600px;
   height: auto;
-  margin-bottom: 40px;
 }
 .doc-link {
   background-color: #e5e5e5;
@@ -3538,7 +3537,10 @@ img.primary {
 }
 figcaption {
   font-size: 14px;
-  margin-left: 24px;
+  margin: auto;
+  width: 600px;
+  text-align: center;
+  padding-bottom: 24px;
 }
 blockquote {
   font-size: 16px;

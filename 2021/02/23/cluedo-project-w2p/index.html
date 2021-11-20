@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://fceek.github.io/2021/02/23/cluedo-project-w2p/fetch-from-upstream.png">
 <meta property="og:image" content="https://fceek.github.io/2021/02/23/cluedo-project-w2p/pull-from-upstream.png">
 <meta property="article:published_time" content="2021-02-22T16:42:13.000Z">
-<meta property="article:modified_time" content="2021-11-20T12:16:40.584Z">
+<meta property="article:modified_time" content="2021-11-20T12:53:39.902Z">
 <meta property="article:author" content="Chen FAN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://fceek.github.io/2021/02/23/cluedo-project-w2p/add-remote.jpg">
@@ -98,19 +98,20 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream https://github.com/fceek/Cluedo-SE21.git</span><br><span class="line">    # 将主仓库添加到remote里，命名为upstream</span><br><span class="line">git fetch upstream</span><br><span class="line">    # 从刚刚添加的upstream里把仓库拖到本地</span><br><span class="line">git checkout [YOUR BRANCH HERE]</span><br><span class="line">    # 检出一个新的本地分支（如果是master就是切换到本地主分支，起个名儿就是创建新分支）</span><br><span class="line">git merge upstream/Chen</span><br><span class="line">    # 把拖下来的upstream里的分支Chen（因为代码更新在这个分支了）归并到刚检出的分支里</span><br><span class="line"></span><br><span class="line">=== OR ===</span><br><span class="line"></span><br><span class="line">git checkout [YOUR BRANCH HERE]</span><br><span class="line">    # 检出新的本地分支</span><br><span class="line">git pull https://github.com/fceek/Cluedo-SE21.git Chen</span><br><span class="line">    # 直接从URL把我的分支拉取过来，这会自动进行一次merge操作</span><br><span class="line">COMMIT AND PUSH</span><br></pre></td></tr></table></figure>
 
 <h3 id="With-Client"><a href="#With-Client" class="headerlink" title="With Client"></a>With Client</h3><p>这里只提供一个使用SourceTree进行以上流程的猜想，不一定对</p>
+<p><a href = "add-remote.jpg" target = "_blank" ><img class="lazy" class = "primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="add-remote.jpg"></a></p>
 <figcaption>Add to remote, SourceTree</figcaption>
-<a href = "add-remote.jpg" target = "_blank" ><img class="lazy" class = "primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="add-remote.jpg"></a>
 
+<br>
+
+<p><a href = "fetch-from-upstream.png" target = "_blank"><img class="lazy" class = "primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="fetch-from-upstream.png"></a></p>
 <figcaption>Fetch from newly added remote, SourceTree</figcaption>
-<a href = "fetch-from-upstream.png" target = "_blank"><img class="lazy" class = "primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="fetch-from-upstream.png"></a>
-使用`Fetch`本质上等于把下面的`Pull`操作拆成两步，先下载文件但不和本地的Branch合并，之后再手动`Merge`
 
+<p>使用<code>Fetch</code>本质上等于把下面的<code>Pull</code>操作拆成两步，先下载文件但不和本地的Branch合并，之后再手动<code>Merge</code></p>
 <p>=== OR ===</p>
+<p><a href = "pull-from-upstream.png" target = "_blank"><img class="lazy" class = "primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="pull-from-upstream.png"></a></p>
 <figcaption>Pull from newly added remote, SourceTree</figcaption>
-<a href = "pull-from-upstream.png" target = "_blank"><img class="lazy" class = "primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="pull-from-upstream.png"></a>
-直接拉取需要注意选择**从**哪个Branch拉取，和拉取**到**哪个Branch，一步到位
 
-
+<p>直接拉取需要注意选择<strong>从</strong>哪个Branch拉取，和拉取<strong>到</strong>哪个Branch，一步到位</p>
 <h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><p>代码任务大概就是尽可能补完 <code>/dev/cluedo_dev.py</code> 里的代码了。<br>因为我只写了框架为了方便和不报错，有些地方我写的比较妥协，所以和之前老师给的那种完形填空不一样的是，如果觉得必要我写的东西你也随便改😉。</p>
 <p>总结一下有三个关键点：</p>
 <ul>
