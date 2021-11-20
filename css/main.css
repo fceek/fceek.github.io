@@ -3525,3 +3525,27 @@ div.swiper-slide img {
   background: #fff !important;
   --swiper-theme-color: #ff5722 !important;
 }
+img.primary {
+  width: 600px;
+  height: auto;
+  margin-bottom: 40px;
+}
+.doc-link {
+  background-color: #e5e5e5;
+  border: #000 1px solid;
+  padding: 4px;
+  font-size: 13px;
+}
+figcaption {
+  font-size: 14px;
+  margin-left: 24px;
+}
+blockquote {
+  font-size: 16px;
+}
+tbody {
+  font-size: 12px;
+}
+.ref-link {
+  font-size: 14px;
+}

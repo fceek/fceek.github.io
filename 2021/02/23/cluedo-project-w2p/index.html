@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 5.4.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>Cluedo Project Tutorial/DevLog - Week 2+ - Flint Canyon</title>
+
+  
+    <meta name="description" content="纸上得来终觉浅，绝知此事要躬行 &#x2F; Software Engineering Group Project, Cluedo, Week 2 post.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cluedo Project Tutorial&#x2F;DevLog - Week 2+">
+<meta property="og:url" content="https://fceek.github.io/2021/02/23/cluedo-project-w2p/index.html">
+<meta property="og:site_name" content="Flint Canyon">
+<meta property="og:description" content="纸上得来终觉浅，绝知此事要躬行 &#x2F; Software Engineering Group Project, Cluedo, Week 2 post.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://fceek.github.io/2021/02/23/cluedo-project-w2p/add-remote.jpg">
+<meta property="og:image" content="https://fceek.github.io/2021/02/23/cluedo-project-w2p/fetch-from-upstream.png">
+<meta property="og:image" content="https://fceek.github.io/2021/02/23/cluedo-project-w2p/pull-from-upstream.png">
+<meta property="article:published_time" content="2021-02-22T16:42:13.000Z">
+<meta property="article:modified_time" content="2021-11-20T12:16:40.584Z">
+<meta property="article:author" content="Chen FAN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://fceek.github.io/2021/02/23/cluedo-project-w2p/add-remote.jpg">
+  
+  
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+</head>
+
+<body>
+  
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+<header class="header">
+
+<div class="logo-wrap"><a class="title" href="/"><div class="main"><img no-lazy height = "64px" src="https://flintcanyon.s3.ap-southeast-1.amazonaws.com/logo4.png"/ onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></div><div class="sub cap">Is this my flint canyon?</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/">Blog</a><a class="nav-item" href="/wiki/">Doc</a><a class="nav-item" href="/standalone/">Ref+</a><a class="nav-item" href="/more/">About</a></nav></header>
+
+<div class="widgets">
+
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Intro"><span class="toc-text">Intro</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Syncing"><span class="toc-text">Syncing</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#With-Bash"><span class="toc-text">With Bash</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#With-Client"><span class="toc-text">With Client</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other"><span class="toc-text">Other</span></a></li></ol></div></div></div>
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Flint Canyon</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2021-02-22T16:42:13.000Z">22-02-2021</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>Cluedo Project Tutorial/DevLog - Week 2+</span></h1>
+<blockquote>
+<p>纸上得来终觉浅，绝知此事要躬行 / <br>Software Engineering Group Project, Cluedo, Week 2 post.</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>大概知道为什么架构师和设计文档编写一般需要有经验的程序员来担当，而实际上写那些模块的都是实习生了。如果没有足够的项目积累，只凭空想做出来的设计大概率是不能100%落实的。今天写程序的时候深切地体会到这一点，也就是说，这周实际上产出的程序，和上周我在文章里预想的并不一样。</p>
+<p>这次的篇幅会很短，毕竟只是对上周内容的补充，如果真和上周一样长怕不是等于上周白写了。主要就说一下更新Fork仓库，至于代码设计上的改动，代码文档里应该有写。</p>
+<h2 id="Syncing"><a href="#Syncing" class="headerlink" title="Syncing"></a>Syncing</h2><p>如果你之前已经Fork了<a target="_blank" rel="noopener" href="https://github.com/fceek/Cluedo-SE21">主仓库</a>，截至现在这个时间点，主仓库已经有了新的提交。由于Fork本质上创建了一个独立的新仓库，这些新的提交并不会被同步到你Fork过去的仓库上，为了能继续在同一个代码基础上施工，就需要一些设置，把主仓库的新提交同步到自己的仓库上。</p>
+<p>这部分因为我自己没什么实践的机会，只能说是提供几个参考文档，然后再基于这些文档搞点猜想。如果有人先试出来稳定的流程了可以分享一下。</p>
+<h3 id="With-Bash"><a href="#With-Bash" class="headerlink" title="With Bash"></a>With Bash</h3><p>我就直接放个代码然后解释两句，实际上用Git Bash的不多（反正我推荐的是用客户端），但是要看代码了解这个流程，才好猜在客户端里怎么操作。。 <strong><a target="_blank" rel="noopener" href="https://docs.pytest.org/en/stable/">- Reference</a></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream https://github.com/fceek/Cluedo-SE21.git</span><br><span class="line">    # 将主仓库添加到remote里，命名为upstream</span><br><span class="line">git fetch upstream</span><br><span class="line">    # 从刚刚添加的upstream里把仓库拖到本地</span><br><span class="line">git checkout [YOUR BRANCH HERE]</span><br><span class="line">    # 检出一个新的本地分支（如果是master就是切换到本地主分支，起个名儿就是创建新分支）</span><br><span class="line">git merge upstream/Chen</span><br><span class="line">    # 把拖下来的upstream里的分支Chen（因为代码更新在这个分支了）归并到刚检出的分支里</span><br><span class="line"></span><br><span class="line">=== OR ===</span><br><span class="line"></span><br><span class="line">git checkout [YOUR BRANCH HERE]</span><br><span class="line">    # 检出新的本地分支</span><br><span class="line">git pull https://github.com/fceek/Cluedo-SE21.git Chen</span><br><span class="line">    # 直接从URL把我的分支拉取过来，这会自动进行一次merge操作</span><br><span class="line">COMMIT AND PUSH</span><br></pre></td></tr></table></figure>
+
+<h3 id="With-Client"><a href="#With-Client" class="headerlink" title="With Client"></a>With Client</h3><p>这里只提供一个使用SourceTree进行以上流程的猜想，不一定对</p>
+<figcaption>Add to remote, SourceTree</figcaption>
+<a href = "add-remote.jpg" target = "_blank" ><img class="lazy" class = "primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="add-remote.jpg"></a>
+
+<figcaption>Fetch from newly added remote, SourceTree</figcaption>
+<a href = "fetch-from-upstream.png" target = "_blank"><img class="lazy" class = "primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="fetch-from-upstream.png"></a>
+使用`Fetch`本质上等于把下面的`Pull`操作拆成两步，先下载文件但不和本地的Branch合并，之后再手动`Merge`
+
+<p>=== OR ===</p>
+<figcaption>Pull from newly added remote, SourceTree</figcaption>
+<a href = "pull-from-upstream.png" target = "_blank"><img class="lazy" class = "primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="pull-from-upstream.png"></a>
+直接拉取需要注意选择**从**哪个Branch拉取，和拉取**到**哪个Branch，一步到位
+
+
+<h2 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h2><p>代码任务大概就是尽可能补完 <code>/dev/cluedo_dev.py</code> 里的代码了。<br>因为我只写了框架为了方便和不报错，有些地方我写的比较妥协，所以和之前老师给的那种完形填空不一样的是，如果觉得必要我写的东西你也随便改😉。</p>
+<p>总结一下有三个关键点：</p>
+<ul>
+<li>从外部文件中读取游戏版图，卡组等<ul>
+<li>后面可能也会加人物定制，可以未雨绸缪一下</li>
+<li>我推荐用JSON或者XML，一是主流，二是Python对它们有支持</li>
+</ul>
+</li>
+<li>版图的数据结构和游戏中角色移动的路径计算</li>
+<li><code>process_accuse()</code> 中对其余玩家手牌的轮询</li>
+</ul>
+<p>解决这三点别的都是切菜，其他具体内容参考代码内文档。</p>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/2021/02/16/cluedo-project-w2/">Cluedo Project Tutorial/DevLog - Week 2<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/2021/05/17/moa-player-perks/">Master of Arms - Player perks<span class="note">较新</span></a><div class="line"></div><a id="more" href="/archives">检索全部文章</a></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<p>本站由 <a href="https://fceek.github.io/">@Chen FAN</a> 创建，使用 <a target="_blank" rel="noopener" href="https://github.com/fceek/hexo-theme-stellar">魔改版Stellar</a> 作为主题。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.5.2';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@6/swiper-bundle.min.css","js":"https://unpkg.com/swiper@6/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>

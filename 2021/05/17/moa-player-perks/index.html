@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 5.4.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>Master of Arms - Player perks - Flint Canyon</title>
+
+  
+    <meta name="description" content="Game Dev and Design group project, Master of Arms, Player perks design document">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Master of Arms - Player perks">
+<meta property="og:url" content="https://fceek.github.io/2021/05/17/moa-player-perks/index.html">
+<meta property="og:site_name" content="Flint Canyon">
+<meta property="og:description" content="Game Dev and Design group project, Master of Arms, Player perks design document">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-16T19:18:50.000Z">
+<meta property="article:modified_time" content="2021-11-20T12:23:20.316Z">
+<meta property="article:author" content="Chen FAN">
+<meta name="twitter:card" content="summary">
+  
+  
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+</head>
+
+<body>
+  
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+<header class="header">
+
+<div class="logo-wrap"><a class="title" href="/"><div class="main"><img no-lazy height = "64px" src="https://flintcanyon.s3.ap-southeast-1.amazonaws.com/logo4.png"/ onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></div><div class="sub cap">Is this my flint canyon?</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/">Blog</a><a class="nav-item" href="/wiki/">Doc</a><a class="nav-item" href="/standalone/">Ref+</a><a class="nav-item" href="/more/">About</a></nav></header>
+
+<div class="widgets">
+
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Perks"><span class="toc-text">Perks</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Template"><span class="toc-text">Template</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Numerical"><span class="toc-text">Numerical</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sentinel"><span class="toc-text">Sentinel</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Builds-S"><span class="toc-text">Builds.S</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Juggernaut"><span class="toc-text">Juggernaut</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Builds-J"><span class="toc-text">Builds.J</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tactician"><span class="toc-text">Tactician</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Builds-T"><span class="toc-text">Builds.T</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Alchemist"><span class="toc-text">Alchemist</span></a></li></ol></li></ol></div></div></div>
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Flint Canyon</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2021-05-16T19:18:50.000Z">16-05-2021</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>Master of Arms - Player perks</span></h1>
+<p>Game Dev and Design group project, Master of Arms, Player perks design document</p>
+<span id="more"></span>
+
+<h2 id="Perks"><a href="#Perks" class="headerlink" title="Perks"></a>Perks</h2><h3 id="Template"><a href="#Template" class="headerlink" title="Template"></a>Template</h3><ul>
+<li><strong>Current</strong> Points you can invest in this perk</li>
+<li><strong>Total</strong> Total points available along this path</li>
+<li><strong>Needed</strong> Points you need to invest in previous rows (all 3 paths count) to be able to unlock this row</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Points Current/Total/Needed</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">5/5/0</td>
+<td>Weapon Speciality (Damage)</td>
+</tr>
+<tr>
+<td align="center">5/10/4</td>
+<td>Weapon Speciality (Utility)</td>
+</tr>
+<tr>
+<td align="center">1/11/8</td>
+<td>Weapon Speciality (Unique)</td>
+</tr>
+<tr>
+<td align="center">5/16/12</td>
+<td>All-Weapon Buff</td>
+</tr>
+<tr>
+<td align="center">5/21/16</td>
+<td>Weapon Speciality (Utility)</td>
+</tr>
+<tr>
+<td align="center">3/24/20</td>
+<td>Unique (Ultimate)</td>
+</tr>
+</tbody></table>
+<h3 id="Numerical"><a href="#Numerical" class="headerlink" title="Numerical"></a>Numerical</h3><p>Payback increases with every points invested in a perk, the reason is to create a dilemma that separate your points to unlock powerful perks earlier, or max out every perk you want to get full benefit from them. This could have some strategic factor involved in player growth.</p>
+<p>All spec stacks additively to prevent too OP builds.</p>
+<hr>
+<h3 id="Sentinel"><a href="#Sentinel" class="headerlink" title="Sentinel"></a>Sentinel</h3><table>
+<thead>
+<tr>
+<th>Sniper</th>
+<th>Pistol</th>
+<th>Looting</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sniper Damage +5/11/18/26/35%</td>
+<td>Pistol Damage +5/11/18/26/35%</td>
+<td>Bullet Found +7/15/24/34/45%</td>
+</tr>
+<tr>
+<td>Sniper Aim Sight Efficiency +6/13/21/30/40% <br> <em>Reduces zooming time, increase accuracy and recoil specs</em></td>
+<td>Pistol Reload Time -6/13/21/30/40%</td>
+<td>Exp Gain +10/22/36/52/70%</td>
+</tr>
+<tr>
+<td>Sniper Damage to Enemy 15+m away +25%</td>
+<td>Pistol Last Bullet in Magazine Damage +150%</td>
+<td>Extra Gun Loot after every run <br> <em>Must finish the run killed by an enemy, instead of giving up</em></td>
+</tr>
+<tr>
+<td>Weak Point Damage +4/9/15/22/30%</td>
+<td>Damage while Moving +4/9/15/22/30%</td>
+<td>Chance for +1 Tier Loot Rarity 3/6/10/14/20%</td>
+</tr>
+<tr>
+<td>Chance to Reload 1 bullet for each Sniper Kill 8/18/30/44/60%</td>
+<td>After swapping to Pistol Fire Rate +7/15/24/34/45% for 5 seconds</td>
+<td>Home Base Storage Slot +1/2/4/6/9</td>
+</tr>
+<tr>
+<td>Aiming while Sniper magazine is full gain slow motion for 1/2/3 seconds, refresh cooldown on kill or reload <br> <em>If you can one-shot enemy and lucky enough to active auto-reload, you can use THE WORLD instantly!</em></td>
+<td>Pistol become dual wielding, each have 55/60/65% damage <br> <em>Equivalent to doubled fire rate and magazine size, reload 50% slower</em></td>
+<td>Ensured to get an exotic gun for every 70/55/40 guns get</td>
+</tr>
+</tbody></table>
+<h4 id="Builds-S"><a href="#Builds-S" class="headerlink" title="Builds.S"></a>Builds.S</h4><p><strong>Sniper Elite</strong> Fps-fundamentalist. Keeping distance, pursuing for one shot one kill with highest dph and slow motion ability.</p>
+<p><strong>Trusted Wingman</strong> At emergency pistols are great for their flexibility. When the only thing can rely on is one last bullet, it will be a destructive hit [Pistol III].</p>
+<p><strong>Bounty Hunter</strong> Does not care about weapons and elements, get every perk that helps to looting and speed running.</p>
+<p><strong>Heavenly Flame</strong> Ignite enemies from far away and wait (for a long time) for the fire to spread, burning everything to ash with the help of [Fire VI].</p>
+<hr>
+<h3 id="Juggernaut"><a href="#Juggernaut" class="headerlink" title="Juggernaut"></a>Juggernaut</h3><table>
+<thead>
+<tr>
+<th>LMG</th>
+<th>AR</th>
+<th>Durability</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LMG Damage +5/11/18/26/35%</td>
+<td>AR Damage +5/11/18/26/35%</td>
+<td>Chance to Ignore incoming damage 4/8/12/18/25%</td>
+</tr>
+<tr>
+<td>While holding LMG, 1 bullet is loaded to your magazine every 5.5/4.5/3.5/2/1 seconds</td>
+<td>Every 10/9/8/6/4th shot will be a Crit</td>
+<td>Max HP +7/16/27/40/55%</td>
+</tr>
+<tr>
+<td>Lower damage taken by 35% while standing still for longer than 3 seconds</td>
+<td>All specs for AR increased by 15%</td>
+<td>When HP is below half, damage dealt +10%, damage taken -10%</td>
+</tr>
+<tr>
+<td>Magazine size +4/9/15/22/30%</td>
+<td>Bullet spread -6/13/21/30/40%</td>
+<td>Increase Healing by 5/11/18/26/35% <br> <em>Including healing from [Durability V] and [Durability VI]</em></td>
+</tr>
+<tr>
+<td>Every second holding fire button, gain 3/7/12/18/25% Fire Rate</td>
+<td>AR Crit Chance +4/9/15/22/30%</td>
+<td>Revive from death with 10/21/33/46/60% HP, once per run</td>
+</tr>
+<tr>
+<td>+1/2/3% Damage per LMG kill, reset on reload or swap weapon <br> <em>Also resets after entering a new room</em></td>
+<td>Every continuous Crit/Weak point hit with AR increase next Crit/Weak point hit damage by 6/12/18%</td>
+<td>Restore 10/20/30% of missing HP when entering a new room</td>
+</tr>
+</tbody></table>
+<h4 id="Builds-J"><a href="#Builds-J" class="headerlink" title="Builds.J"></a>Builds.J</h4><p><strong>John Rambo</strong> Hold position, stand still, splash bullet storm with LMG empowered by Lightning. Dealing considerable AOE while having 45% damage reduction and ~51% dodge rate.</p>
+<p><strong>Frozen Synapse</strong> Combination of AR and Ice element grants attacks ~75% Crit rate. Be lucky enough, or accurate enough, get enormous damage buff by stacking [AR VI].</p>
+<p><strong>Overkill or Underkill</strong> Treasure every bullet you have in your LMG to maintain damage buff stacks from [LMG VI]. Master the pace of engaging enemies, keep in mind not to habitually press R or mouse wheel.</p>
+<hr>
+<h3 id="Tactician"><a href="#Tactician" class="headerlink" title="Tactician"></a>Tactician</h3><table>
+<thead>
+<tr>
+<th>Shotgun</th>
+<th>SMG</th>
+<th>Mobility</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Shotgun Damage +5/11/18/26/35%</td>
+<td>SMG Damage +5/11/18/26/35%</td>
+<td>Blink cooldown reduced by 5/11/18/26/35%</td>
+</tr>
+<tr>
+<td>Every 20m moved after a Shotgun shot grants next one +3/7/11/15/20% damage</td>
+<td>SMG instant kills enemies blow 2/4/7/11/15% HP on hit</td>
+<td>Movement speed +4/8/12/18/25%</td>
+</tr>
+<tr>
+<td>Number of Shotgun Projectile +50% but spread in a larger area</td>
+<td>SMG Damage to Element Affected enemies +25%</td>
+<td>Blink grants 2 seconds of damage dealt +20%, damage taken -20%</td>
+</tr>
+<tr>
+<td>Damage to enemies at full HP +4/9/15/22/30%</td>
+<td>Recoil Efficiency +6/13/21/30/40%</td>
+<td>Melee Attack Damage +10/22/36/52/70%</td>
+</tr>
+<tr>
+<td>Shotgun effective range +6/13/21/30/40%</td>
+<td>Elemental effect of SMG +6/13/21/30/40%</td>
+<td>Melee Attack charge Blink by 20/26/33/41/50% of its cooldown</td>
+</tr>
+<tr>
+<td>Shotgun reload 2/3/4 bullets at once</td>
+<td>Every SMG hit deal at least 1/2/3% of enemy max HP as Physical Damage (Effect lowered vs bosses)</td>
+<td>Blink now has 2 charges, with cooldown of 110/100/90%</td>
+</tr>
+</tbody></table>
+<h4 id="Builds-T"><a href="#Builds-T" class="headerlink" title="Builds.T"></a>Builds.T</h4><p><strong>Hit and Run</strong> Running towards every body and hit them with a fully charged [Shotgun II] [Pistol IV] shotgun shot in the face. Momentum is power, Speed is pursue.</p>
+<p><strong>Shimada Genji</strong> Greatly cooldown reduction applied to Blink, melee attacks almost refresh it, even more it has a charge of 2. Never stop blinking and become the ghost in the battlefield.</p>
+<p><strong>Chicago Alchemist</strong> SMGs are great triggering elemental effects. Having SMGs with all kinds of element in weapon wheel, handle all kinds of situation would be so easy.</p>
+<p><strong>Giant Slayer</strong> Although [SMG VI] is nerfed against bosses, execution [SMG II] and guaranteed base damage could still be a good choice to cut down these powerful opponents.</p>
+<hr>
+<h3 id="Alchemist"><a href="#Alchemist" class="headerlink" title="Alchemist"></a>Alchemist</h3><table>
+<thead>
+<tr>
+<th>Fire</th>
+<th>Ice</th>
+<th>Shock</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fire Spread interval -6/13/21/30/40%</td>
+<td>Ice Element Slow +8/18/30/44/60% <br> <em>Based on weapon ice element specs, for instance increase the slow from 30% to 48% (30*(1+60%)) at max level</em></td>
+<td>Chain Lighting conducts +1/2/3/5/7</td>
+</tr>
+<tr>
+<td>Enemies Ignited receive 4/9/15/22/30% more damage</td>
+<td>Hit by enemies while holding an ice weapon will slow them by 30/45/60/80/100% of your ice element slow</td>
+<td>Lighting shock make enemies miss 5/11/18/26/35% of their attacks in 3 seconds</td>
+</tr>
+<tr>
+<td>Ignited enemies near another ignited one took both the burning damage</td>
+<td>Stacking Ice effect on enemies now freeze them</td>
+<td>Chain Lightning now branch into 2 sub-lightning with half the damage</td>
+</tr>
+<tr>
+<td>All Elemental Damage +5/11/18/26/35%</td>
+<td>All Elemental Effect Time +5/11/18/26/35%</td>
+<td>All Elemental Effect inflect chance +5/11/18/26/35%</td>
+</tr>
+<tr>
+<td>Igniting already burning enemies will instantly deal 120/150/190/240/300% of burning DPS</td>
+<td>Crit Rate +4/9/15/22/30% to Slowed enemies</td>
+<td>Melee attacking shocked enemies increase your damage dealt by 15% for 2/3/4/6/8 seconds</td>
+</tr>
+<tr>
+<td>Once enemies got ignited they burnt till death, burning damage modified to 70/90/110%</td>
+<td>Killing Frozen enemies create an ice nova blast with 150/200/250% weapon damage</td>
+<td>Sub-lightning Damage increase to 60/70/80%</td>
+</tr>
+</tbody></table>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/2021/02/23/cluedo-project-w2p/">Cluedo Project Tutorial/DevLog - Week 2+<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/2021/10/27/PlaceHolder/">PlaceHolder<span class="note">较新</span></a><div class="line"></div><a id="more" href="/archives">检索全部文章</a></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<p>本站由 <a href="https://fceek.github.io/">@Chen FAN</a> 创建，使用 <a target="_blank" rel="noopener" href="https://github.com/fceek/hexo-theme-stellar">魔改版Stellar</a> 作为主题。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.5.2';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@6/swiper-bundle.min.css","js":"https://unpkg.com/swiper@6/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>

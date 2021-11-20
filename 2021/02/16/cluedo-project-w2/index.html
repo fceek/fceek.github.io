@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 5.4.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>Cluedo Project Tutorial/DevLog - Week 2 - Flint Canyon</title>
+
+  
+    <meta name="description" content="Software Engineering Group Project, Cluedo, Week 2 post.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cluedo Project Tutorial&#x2F;DevLog - Week 2">
+<meta property="og:url" content="https://fceek.github.io/2021/02/16/cluedo-project-w2/index.html">
+<meta property="og:site_name" content="Flint Canyon">
+<meta property="og:description" content="Software Engineering Group Project, Cluedo, Week 2 post.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://fceek.github.io/2021/02/16/cluedo-project-w2/timeline.jpg">
+<meta property="og:image" content="https://fceek.github.io/2021/02/16/cluedo-project-w2/class-diagram.jpg">
+<meta property="article:published_time" content="2021-02-16T03:54:30.000Z">
+<meta property="article:modified_time" content="2021-11-20T11:58:39.579Z">
+<meta property="article:author" content="Chen FAN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://fceek.github.io/2021/02/16/cluedo-project-w2/timeline.jpg">
+  
+  
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+</head>
+
+<body>
+  
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+<header class="header">
+
+<div class="logo-wrap"><a class="title" href="/"><div class="main"><img no-lazy height = "64px" src="https://flintcanyon.s3.ap-southeast-1.amazonaws.com/logo4.png"/ onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></div><div class="sub cap">Is this my flint canyon?</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/">Blog</a><a class="nav-item" href="/wiki/">Doc</a><a class="nav-item" href="/standalone/">Ref+</a><a class="nav-item" href="/more/">About</a></nav></header>
+
+<div class="widgets">
+
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Intro"><span class="toc-text">Intro</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#General-Planning"><span class="toc-text">General Planning</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Timeline"><span class="toc-text">Timeline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Milestones"><span class="toc-text">Milestones</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sprint-Cycle-1"><span class="toc-text">Sprint Cycle 1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#WalkThrough"><span class="toc-text">WalkThrough</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Class-List"><span class="toc-text">Class List</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Cluedo"><span class="toc-text">Cluedo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CluedoGame"><span class="toc-text">CluedoGame</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Player"><span class="toc-text">Player</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Card"><span class="toc-text">Card</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GameBoard"><span class="toc-text">GameBoard</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Room"><span class="toc-text">Room</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%99%E5%91%A8%E7%9A%84%E4%B8%BB%E7%BA%BF%E4%BB%BB%E5%8A%A1"><span class="toc-text">这周的主线任务</span></a></li></ol></div></div></div>
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Flint Canyon</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2021-02-16T03:54:30.000Z">16-02-2021</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>Cluedo Project Tutorial/DevLog - Week 2</span></h1>
+<p>Software Engineering Group Project, Cluedo, Week 2 post.</p>
+<span id="more"></span>
+
+<div class="tag-plugin note" color="blue"><div class="title"><strong>ℹ 插播一下，我在网站更新了Reference List + 功能，就在右上角↗</strong></div><div class="body"><p><strong>2021.11更新：新网站的Ref+入口在左侧导航栏。</strong><br>里面会包括我提到过的链接，Canvas上一些文件的直接下载地址（大概会比去Canvas里翻方便一些？）和其他的一些有用链接。</p></div></div>
+
+<br>
+
+<blockquote>
+<p>这周终于要写代码了。<br>好像也没必要设deadline，毕竟真干起活来激发潜能一周能啃八周的量。<br>比如上周大概半小时不到的内容，放在这周开写之前弄一下就行了（大概？）。</p>
+</blockquote>
+<h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>第一周的热身结束了，考虑到下周一必须要有实际产出，这篇文章又因为我个人原因拖了两天没及时发出来，之后的几天和这个周末可能会比较赶？不过我会在“还是得看需求文档”的前提下尽量把这周所需要的底层设计写的详细一点，这样大家拿到手之后，如果对游戏规则熟的话基本只需要完形填空。除此之外我还会简单理一下整个项目的时间线。</p>
+<p>如果每周的东西没人做我之后会自己补，稍微拖一拖其实无所谓（毕竟我自己也狂拖）。但这个项目并不是只有一个阶段，各个阶段之间还有继承和依赖关系，做到后面发现缺东西可能就会提前进入修补程序，要是一直拖到我提前把你的活儿补了就只能痛失这个份额了。总结起来就是，拖延症随便拖，但是只能拖到我忍不住把你的活干了之前😅。</p>
+<h2 id="General-Planning"><a href="#General-Planning" class="headerlink" title="General Planning"></a>General Planning</h2><h3 id="Timeline"><a href="#Timeline" class="headerlink" title="Timeline"></a>Timeline</h3><p>在文章的最开始，我想先算一下时间，这样比较方便给出一个整体的时间规划（紧迫感拉满）。</p>
+<p>这周是整个学期的第四周，整个作业的DDL在十一周/四月30号，加上中间的复活节假期，实际上留给我们的时间是正好十周。<br>从这周开始有的Seminars理论上来说是要给出Demo展示进度的，这周被Git Workshop顶掉了所以不用，下一周的正常Seminar就得拿东西出来了，因此第一个开发周期只截至下周一。剩下的则是两周一个周期，最后留下一周多用来补文档和应对突发情况。</p>
+<figcaption>Estimated Timeline (长图点大)</figcaption>
+<a href = "timeline.jpg" target = "_blank"><img class="lazy" class = "primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="timeline.jpg"></a>
+
+
+<h3 id="Milestones"><a href="#Milestones" class="headerlink" title="Milestones"></a>Milestones</h3><p>于是可以设置的Milestone一共有四个半。那半个是这周需要五天速成的简单难度目标，剩下四个是普通难度，如果做GUI那个周期发现库有点难上手可能那个周期会变成困难难度，这时候就可以从预留的一周多时间里抽几天过来用。暂定的Milestones大概这样：</p>
+<table>
+<thead>
+<tr>
+<th>M1</th>
+<th>M2</th>
+<th>M3</th>
+<th>M4</th>
+<th>M5</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>命令行</td>
+<td>命令行</td>
+<td>GUI</td>
+<td>GUI</td>
+<td>外部工具</td>
+</tr>
+<tr>
+<td>核心机制</td>
+<td>AI，完整游戏</td>
+<td>残局模式，残局编辑器</td>
+<td>完整游戏</td>
+<td>Debug，优化，Release</td>
+</tr>
+<tr>
+<td>玩家进行回合，在版图里行动，提出怀疑，下达指控并取胜/淘汰</td>
+<td>LogBook，菜单等外部功能，玩家与AI玩家进行游戏</td>
+<td>由外部文件导入残局，AI玩家模拟对局，编辑器自定义生成残局文件</td>
+<td>实现GUI，版图/角色自定义</td>
+<td>系统测试，增删改查，V1.0</td>
+</tr>
+</tbody></table>
+<div class="tag-plugin note" color="yellow"><div class="body"><p>⚠&nbsp;这个表我是按照之前读需求文档，和自己打的两三把Steam版Cluedo的记忆写出来的，有可能会缺功能，发现有缺漏请务必告诉我。</p></div></div>
+
+
+<h2 id="Sprint-Cycle-1"><a href="#Sprint-Cycle-1" class="headerlink" title="Sprint Cycle 1"></a>Sprint Cycle 1</h2><h3 id="WalkThrough"><a href="#WalkThrough" class="headerlink" title="WalkThrough"></a>WalkThrough</h3><p>这个版本的显式流程，大概就是最后成品进游戏需要达到的效果。</p>
+<ul>
+<li>指定人数开始游戏</li>
+<li>每个人依次进行回合<ul>
+<li>显示此玩家的手牌</li>
+<li>扔骰子，得出本回合玩家可以前往的房间</li>
+<li>玩家选择前往哪个房间</li>
+<li>提出怀疑<ul>
+<li>其他玩家展示手牌</li>
+<li>如果有多张手牌可展示，让该玩家选择</li>
+</ul>
+</li>
+<li>询问玩家是否提出指控<ul>
+<li>指控失败则淘汰玩家</li>
+</ul>
+</li>
+<li>进入下个玩家的回合</li>
+</ul>
+</li>
+<li>某个玩家取得胜利或收到退出指令</li>
+</ul>
+<h3 id="Class-List"><a href="#Class-List" class="headerlink" title="Class List"></a>Class List</h3><div class="tag-plugin note" color="yellow"><div class="body"><p>⚠&nbsp;这部分内容同样不是最终版，要达成设计流程肯定还要加点什么，具体写代码的时候得随机应变。稍微有点挑战性才有趣（？</p></div></div>
+
+
+<figcaption>UML Class Diagram</figcaption>
+<a href = "class-diagram.jpg" target = "_blank"><img class="primary lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="class-diagram.jpg"></a>
+
+<h4 id="Cluedo"><a href="#Cluedo" class="headerlink" title="Cluedo"></a>Cluedo</h4><p>游戏的主入口，目前只需要接收一个玩家输入的人数，然后以这个人数为参数新建一局 <code>CluedoGame</code> 就行。</p>
+<h4 id="CluedoGame"><a href="#CluedoGame" class="headerlink" title="CluedoGame"></a>CluedoGame</h4><p>一局游戏的本体，创建后应进行的初始化：</p>
+<ul>
+<li>根据玩家人数填充 <code>Players</code></li>
+<li>将 <code>NextPlayer</code> 设置为Player 1</li>
+<li>获取所有的卡片信息填充到 <code>Cards</code><ul>
+<li>这里我觉得可以从一个单独的结构体甚至是外部文件导入这些卡片的信息，而不推荐直接写在这个Class的代码里</li>
+</ul>
+</li>
+<li>从每个种类的卡里选一张作为正确答案</li>
+<li>建立 <code>GameBoard</code></li>
+<li>将所有的玩家放置在 <code>GameBoard</code> 起始点</li>
+<li>给玩家发放手牌</li>
+<li>开始第一个回合</li>
+</ul>
+<p>进行回合的方法为 <code>ProcessTurn()</code>，在这个方法中可能被调用的方法有：</p>
+<ul>
+<li><code>DiceRoll()</code><ul>
+<li>掷骰子</li>
+</ul>
+</li>
+<li><code>Suspect()</code><ul>
+<li>提出怀疑</li>
+</ul>
+</li>
+<li><code>Accuse()</code><ul>
+<li>提出指控</li>
+</ul>
+</li>
+</ul>
+<p>…等，具体逻辑参考上一节的显式流程，</p>
+<p>另外需要一个方法 <code>GetPlayerInput()</code> 用于接收玩家输入的指令。</p>
+<h4 id="Player"><a href="#Player" class="headerlink" title="Player"></a>Player</h4><p>玩家，里面存玩家的角色名（目前就用Player 1、Player 2这样吧），手上的牌和目前在 <code>GameBoard</code> 上的坐标 <code>Coordinate</code>。</p>
+<h4 id="Card"><a href="#Card" class="headerlink" title="Card"></a>Card</h4><p>游戏中要用到的卡牌，存卡牌的类型（人物/武器/房间），具体描述文字和是否被选为正确答案。</p>
+<p>关于正确答案我觉得可以用 <code>IsAnswer</code> 和 <code>MakeAnswer()</code> 将它放到 <code>Card</code> 类里面处理，也可以在 <code>CluedoGame</code> 里添加一个答案属性用来存，存疑。</p>
+<h4 id="GameBoard"><a href="#GameBoard" class="headerlink" title="GameBoard"></a>GameBoard</h4><p>游戏版图，关于版图信息本身像 <code>Card</code> 一样也应该是分离出来比较好，建立版图的时候从里面读。<br>属性具体有一组 <code>Room</code> ，是版图里的房间。几个方法分别用来移动玩家和检查玩家行走n步能到达的房间列表。</p>
+<p>这部分可能是整个项目里唯一要用到算法的地方，因为走路的时候要绕开别的玩家的棋子，具体实现上可以增加一个 <code>Occupied</code> 属性来存有人的格子，或者建立从 <code>GameBoard</code> 到 <code>CluedoGame</code> 的反向索引来获取 <code>Players</code> 。解决办法随便一想就有好几种，这也是需要纠结的源头，写的时候看怎么方便怎么来吧。</p>
+<h4 id="Room"><a href="#Room" class="headerlink" title="Room"></a>Room</h4><p>房间，有名字和入口坐标。</p>
+<h2 id="这周的主线任务"><a href="#这周的主线任务" class="headerlink" title="这周的主线任务"></a>这周的主线任务</h2><p>首先我觉得读一下代码标准很有必要：</p>
+<p><a class="doc-link" href = "https://google.github.io/styleguide/pyguide.html">Python Style Guide</a></p>
+<p>我的建议是每个人都自己写一份自己版本的代码出来，因为目前版本的内容不多，这么高耦合的几个Class如果分几个人来写反而会更麻烦。然后关于处理上有差异的点就可以拿出来比较一下优劣什么的。</p>
+<p>当然作为Group Work合作完成也完全没问题，解决高耦合对接不上的问题其中一个方法是，大家连麦/Screen Share一起写，就和Kingsley在课上推荐的Pair Coding差不多意思，大家要是想的话可以自己商量商量分工什么的。</p>
+<p>如果事情比较顺利我就去写这部分的单元测试了，这样周末我就可以把提交上来的代码跑跑看。如果不太顺利这周就先不搞单元测试，集中火力先胡一个下周一能给Kingsley看的Demo再说。</p>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/2021/02/11/cluedo-project-w1/">Cluedo Project Tutorial - Week 1<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/2021/02/23/cluedo-project-w2p/">Cluedo Project Tutorial/DevLog - Week 2+<span class="note">较新</span></a><div class="line"></div><a id="more" href="/archives">检索全部文章</a></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<p>本站由 <a href="https://fceek.github.io/">@Chen FAN</a> 创建，使用 <a target="_blank" rel="noopener" href="https://github.com/fceek/hexo-theme-stellar">魔改版Stellar</a> 作为主题。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.5.2';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@6/swiper-bundle.min.css","js":"https://unpkg.com/swiper@6/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>
