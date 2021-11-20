@@ -34,9 +34,9 @@ Software Engineering Group Project, Cluedo, Week 2 post.
 这周是整个学期的第四周，整个作业的DDL在十一周/四月30号，加上中间的复活节假期，实际上留给我们的时间是正好十周。
 从这周开始有的Seminars理论上来说是要给出Demo展示进度的，这周被Git Workshop顶掉了所以不用，下一周的正常Seminar就得拿东西出来了，因此第一个开发周期只截至下周一。剩下的则是两周一个周期，最后留下一周多用来补文档和应对突发情况。
 
-<figcaption>Estimated Timeline (长图点大)</figcaption>
-<a href = "timeline.jpg" target = "_blank"><img class = "primary" src="timeline.jpg"></a>
 
+<a href = "timeline.jpg" target = "_blank"><img class = "primary" src="timeline.jpg"></a>
+<figcaption>Estimated Timeline (长图点大)</figcaption>
 
 ### Milestones
 
@@ -76,8 +76,8 @@ Software Engineering Group Project, Cluedo, Week 2 post.
 {% note color:yellow ⚠&nbsp;这部分内容同样不是最终版，要达成设计流程肯定还要加点什么，具体写代码的时候得随机应变。稍微有点挑战性才有趣（？ %}
 
 
-<figcaption>UML Class Diagram</figcaption>
 <a href = "class-diagram.jpg" target = "_blank"><img class="primary" src="class-diagram.jpg"></a>
+<figcaption>UML Class Diagram</figcaption>
 
 #### Cluedo
 

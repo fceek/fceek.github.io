@@ -1,0 +1,16 @@
+# friends
+group1:
+  title: 给我推荐HEXO的盐同学：
+  items:
+    - title: 想要一杯拿铁吗？
+      url: https://sunnky99.github.io/
+      description: 藏了一些松果。
+      avatar: https://sunnky99.github.io/images/icon02.png
+
+group2:
+  title: Stellar主题作者：
+  items:
+    - title: xaoxuu
+      avatar: https://cdn.jsdelivr.net/gh/cdn-x/xaoxuu/avatar/rect-256@2x.png
+      url: https://xaoxuu.com
+      screenshot: https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg
