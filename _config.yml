@@ -107,3 +107,17 @@ deploy:
   repo: https://github.com/fceek/fceek.github.io.git
   branch: deploy
   message: This is auto deploy with hexo-deployer-git
+
+# Head Injection
+inject:
+  head:
+    - <meta name="google-site-verification" content="iZFgMu72AubbORNR709pEMHCVIoRxrfAGX3MhFvNcUE" />
+    - <meta name="baidu-site-verification" content="code-0ctzlhkWiE" />
+    - <script async src="https://www.googletagmanager.com/gtag/js?id=G-L86GBFV0SN"></script>
+    - <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-L86GBFV0SN');
+      </script>
