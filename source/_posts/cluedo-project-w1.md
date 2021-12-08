@@ -39,13 +39,13 @@ Python的命令随系统的不同会不一样，`py`是 *Windows Python Launcher
 
 
 <a href = "python-cmd.jpg" target = "_blank"><img class = "primary" src = "python-cmd.jpg"/></a>  
-<figcaption>Example in WindowsTerminal, pwsh6</figcaption> 
+<figcaption class="primary">Example in WindowsTerminal, pwsh6</figcaption> 
 
 以上讨论的都是在命令行环境中的情况，用于集成/测试，在开发过程中有了VSCode或者PyCharm这样的IDE帮助，Python版本反倒不是什么问题。
 
 
 <a href = "vscode-pylance.png" target = "_blank"><img class="primary" src="vscode-pylance.png" /></a>
-<figcaption>Choosing Python version, VSCode + Pylance</figcaption>
+<figcaption class="primary">Choosing Python version, VSCode + Pylance</figcaption>
 
 ### pip
 
@@ -114,7 +114,7 @@ GitKraken需要验证学生邮箱才能免费使用，具体流程是给GitHub�
   - `clone` 也是复制，但指的是云端到本地的复制
 
 <a href = "sourcetree-remote-account.png" target = "_blank"><img class="primary" src="sourcetree-remote-account.png"/></a>
-<figcaption>Set your GitHub account before cloning is preferred, SourceTree</figcaption>
+<figcaption class="primary">Set your GitHub account before cloning is preferred, SourceTree</figcaption>
 
 - 在本地用IDE/Shell对文件进行修改
   - 一般推荐使用 `Branch` 针对每个Feature单独分支

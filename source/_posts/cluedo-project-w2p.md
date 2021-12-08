@@ -48,20 +48,20 @@ COMMIT AND PUSH
 
 这里只提供一个使用SourceTree进行以上流程的猜想，不一定对
 
-<a href = "add-remote.jpg" target = "_blank" ><img class = "primary" src="add-remote.jpg"></a>
-<figcaption>Add to remote, SourceTree</figcaption>
+<a href = "add-remote.jpg" target = "_blank" ><img class="primary" src="add-remote.jpg"></a>
+<figcaption class="primary">Add to remote, SourceTree</figcaption>
 
 <br>
 
-<a href = "fetch-from-upstream.png" target = "_blank"><img class = "primary" src="fetch-from-upstream.png"></a>
-<figcaption>Fetch from newly added remote, SourceTree</figcaption>
+<a href = "fetch-from-upstream.png" target = "_blank"><img class="primary" src="fetch-from-upstream.png"></a>
+<figcaption class="primary">Fetch from newly added remote, SourceTree</figcaption>
 
 使用`Fetch`本质上等于把下面的`Pull`操作拆成两步，先下载文件但不和本地的Branch合并，之后再手动`Merge`
 
 === OR ===
 
-<a href = "pull-from-upstream.png" target = "_blank"><img class = "primary" src="pull-from-upstream.png"></a>
-<figcaption>Pull from newly added remote, SourceTree</figcaption>
+<a href = "pull-from-upstream.png" target = "_blank"><img class="primary" src="pull-from-upstream.png"></a>
+<figcaption class="primary">Pull from newly added remote, SourceTree</figcaption>
 
 直接拉取需要注意选择**从**哪个Branch拉取，和拉取**到**哪个Branch，一步到位
 

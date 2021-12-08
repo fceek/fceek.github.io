@@ -5,3 +5,11 @@ HPFramework:
   cover: true
   description: HeartPhase小组开发，供作业项目、GameJam和Prototyping使用的Unity项目框架。
   repo: HeartPhase/HP-Unity-Bootstrap
+
+Stellar-FC:
+  title: Stellar-FC
+  subtitle: Stellar that I would use
+  tags: [Web, Blog]
+  cover: false
+  description: 记录一下自己对Stellar主题的魔改，以便之后查阅
+  repo: fceek/hexo-theme-stellar

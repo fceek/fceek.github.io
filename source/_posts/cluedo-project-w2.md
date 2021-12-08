@@ -35,8 +35,8 @@ Software Engineering Group Project, Cluedo, Week 2 post.
 从这周开始有的Seminars理论上来说是要给出Demo展示进度的，这周被Git Workshop顶掉了所以不用，下一周的正常Seminar就得拿东西出来了，因此第一个开发周期只截至下周一。剩下的则是两周一个周期，最后留下一周多用来补文档和应对突发情况。
 
 
-<a href = "timeline.jpg" target = "_blank"><img class = "primary" src="timeline.jpg"></a>
-<figcaption>Estimated Timeline (长图点大)</figcaption>
+<a href = "timeline.jpg" target = "_blank"><img class="primary" src="timeline.jpg"></a>
+<figcaption class="primary">Estimated Timeline (长图点大)</figcaption>
 
 ### Milestones
 
@@ -77,7 +77,7 @@ Software Engineering Group Project, Cluedo, Week 2 post.
 
 
 <a href = "class-diagram.jpg" target = "_blank"><img class="primary" src="class-diagram.jpg"></a>
-<figcaption>UML Class Diagram</figcaption>
+<figcaption class="primary">UML Class Diagram</figcaption>
 
 #### Cluedo
 
