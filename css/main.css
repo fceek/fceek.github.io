@@ -3525,22 +3525,37 @@ div.swiper-slide img {
   background: #fff !important;
   --swiper-theme-color: #ff5722 !important;
 }
-img.primary {
+article img.primary {
   width: 600px;
   height: auto;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px 0px #000;
+}
+article img.primary:hover {
+  border-radius: 0px;
+  box-shadow: 0px 0px 8px 0px #000;
+}
+article figcaption {
+  font-size: 0.9rem;
+  margin: auto;
+  max-width: 600px;
+  text-align: center;
+  padding-bottom: 24px;
 }
 .doc-link {
   background-color: #e5e5e5;
   border: #000 1px solid;
   padding: 4px;
-  font-size: 13px;
+  font-size: 0.8rem;
 }
-figcaption {
-  font-size: 14px;
-  margin: auto;
-  width: 600px;
-  text-align: center;
-  padding-bottom: 24px;
+article p.sidenote {
+  position: absolute;
+  width: 192px;
+  font-size: 0.85rem;
+  right: -192px;
+  margin: 0px;
+  border-top: 1px solid #434343;
+  padding-top: 0.5rem;
 }
 blockquote {
   font-size: 16px;

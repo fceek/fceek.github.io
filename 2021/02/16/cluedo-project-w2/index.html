@@ -9,7 +9,6 @@
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-
   <meta name="renderer" content="webkit">
   <meta name="force-rendering" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -30,7 +29,7 @@
 <meta property="og:image" content="https://fceek.github.io/2021/02/16/cluedo-project-w2/timeline.jpg">
 <meta property="og:image" content="https://fceek.github.io/2021/02/16/cluedo-project-w2/class-diagram.jpg">
 <meta property="article:published_time" content="2021-02-16T03:54:30.000Z">
-<meta property="article:modified_time" content="2021-11-20T12:53:22.528Z">
+<meta property="article:modified_time" content="2021-12-08T13:31:53.855Z">
 <meta property="article:author" content="Chen FAN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://fceek.github.io/2021/02/16/cluedo-project-w2/timeline.jpg">
@@ -48,6 +47,17 @@
 
   
 
+  
+    
+      <meta name="google-site-verification" content="iZFgMu72AubbORNR709pEMHCVIoRxrfAGX3MhFvNcUE" />
+    
+      <meta name="baidu-site-verification" content="code-0ctzlhkWiE" />
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-L86GBFV0SN"></script>
+    
+      <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+gtag('config', 'G-L86GBFV0SN'); </script>
+    
   
 </head>
 
@@ -98,8 +108,8 @@
 <p>如果每周的东西没人做我之后会自己补，稍微拖一拖其实无所谓（毕竟我自己也狂拖）。但这个项目并不是只有一个阶段，各个阶段之间还有继承和依赖关系，做到后面发现缺东西可能就会提前进入修补程序，要是一直拖到我提前把你的活儿补了就只能痛失这个份额了。总结起来就是，拖延症随便拖，但是只能拖到我忍不住把你的活干了之前😅。</p>
 <h2 id="General-Planning"><a href="#General-Planning" class="headerlink" title="General Planning"></a>General Planning</h2><h3 id="Timeline"><a href="#Timeline" class="headerlink" title="Timeline"></a>Timeline</h3><p>在文章的最开始，我想先算一下时间，这样比较方便给出一个整体的时间规划（紧迫感拉满）。</p>
 <p>这周是整个学期的第四周，整个作业的DDL在十一周/四月30号，加上中间的复活节假期，实际上留给我们的时间是正好十周。<br>从这周开始有的Seminars理论上来说是要给出Demo展示进度的，这周被Git Workshop顶掉了所以不用，下一周的正常Seminar就得拿东西出来了，因此第一个开发周期只截至下周一。剩下的则是两周一个周期，最后留下一周多用来补文档和应对突发情况。</p>
-<p><a href = "timeline.jpg" target = "_blank"><img class="lazy" class = "primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="timeline.jpg"></a></p>
-<figcaption>Estimated Timeline (长图点大)</figcaption>
+<p><a href = "timeline.jpg" target = "_blank"><img class="primary lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="timeline.jpg"></a></p>
+<figcaption class="primary">Estimated Timeline (长图点大)</figcaption>
 
 <h3 id="Milestones"><a href="#Milestones" class="headerlink" title="Milestones"></a>Milestones</h3><p>于是可以设置的Milestone一共有四个半。那半个是这周需要五天速成的简单难度目标，剩下四个是普通难度，如果做GUI那个周期发现库有点难上手可能那个周期会变成困难难度，这时候就可以从预留的一周多时间里抽几天过来用。暂定的Milestones大概这样：</p>
 <table>
@@ -162,7 +172,7 @@
 
 
 <p><a href = "class-diagram.jpg" target = "_blank"><img class="primary lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="class-diagram.jpg"></a></p>
-<figcaption>UML Class Diagram</figcaption>
+<figcaption class="primary">UML Class Diagram</figcaption>
 
 <h4 id="Cluedo"><a href="#Cluedo" class="headerlink" title="Cluedo"></a>Cluedo</h4><p>游戏的主入口，目前只需要接收一个玩家输入的人数，然后以这个人数为参数新建一局 <code>CluedoGame</code> 就行。</p>
 <h4 id="CluedoGame"><a href="#CluedoGame" class="headerlink" title="CluedoGame"></a>CluedoGame</h4><p>一局游戏的本体，创建后应进行的初始化：</p>
