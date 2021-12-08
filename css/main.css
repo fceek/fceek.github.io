@@ -3544,19 +3544,51 @@ article figcaption.primary {
   padding-bottom: 24px;
 }
 .doc-link {
-  background-color: #e5e5e5;
+  background-color: #ededed;
   border: #000 1px solid;
   padding: 4px;
   font-size: 0.8rem;
 }
 article p.sidenote {
   position: absolute;
-  width: 192px;
-  font-size: 0.85rem;
+  width: 180px;
+  font-size: 0.8rem;
   right: -192px;
   margin: 0px;
-  border-top: 1px solid #434343;
   padding-top: 0.5rem;
+  padding-left: 0.75rem;
+}
+@media only screen and (max-width: 1200px) {
+  article p.sidenote {
+    position: relative;
+    width: 100%;
+    right: 0px;
+  }
+  article p.sidenote:after {
+    z-index: -1;
+    content: "↙";
+    text-align: center;
+    position: absolute;
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0 -1rem;
+    background-color: #ededed;
+    width: 2rem;
+    height: 1.75rem;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  article p.sidenote:before {
+    z-index: -1;
+    content: "*";
+    text-align: center;
+    position: absolute;
+    font-size: 1.25rem;
+    margin: -1rem 0 0 -1.25rem;
+    background-color: #ededed;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-weight: bold;
+  }
 }
 blockquote {
   font-size: 16px;
