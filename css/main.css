@@ -3526,7 +3526,7 @@ div.swiper-slide img {
   --swiper-theme-color: #ff5722 !important;
 }
 article img.primary {
-  width: 600px;
+  max-width: 600px;
   height: auto;
   border-radius: 4px;
   box-shadow: 0px 0px 5px 0px #000;
@@ -3535,10 +3535,10 @@ article img.primary:hover {
   border-radius: 0px;
   box-shadow: 0px 0px 8px 0px #000;
 }
-article figcaption {
+article figcaption.primary {
   font-size: 0.9rem;
   margin: auto;
-  max-width: 600px;
+  width: 600px;
   text-align: center;
   padding-bottom: 24px;
 }
