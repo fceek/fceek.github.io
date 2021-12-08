@@ -41,9 +41,9 @@ title: Customisation List
 {% codeblock 示例 lang:html %}
 这是第一段文字。
 
-<p class="sidenote">第二段的注解。</p>
+<p class="sidenote">第二段的注解。这段注解长一些。这段注解长一些。这段注解长一些。这段注解长一些。</p>
 
-这是第二段文字。
+这是第二段文字。在屏幕宽度小于1200像素时，边注的样式会发生变化。缩小窗口来尝试这一特性。
 
 <p class="sidenote">Note for paragraph 3.</p>
 
@@ -56,12 +56,12 @@ This is the third paragraph.
 
 这是第一段文字。
 
-<p class="sidenote">第二段的注解。</p>
+<p class="sidenote">第二段的注解。这段注解长一些。这段注解长一些。</p>
 
-这是第二段文字。这是第二段文字。这是第二段文字。这是第二段文字。这是第二段文字。这是第二段文字。这是第二段文字。这是第二段文字。这是第二段文字。这是第二段文字。这是第二段文字。这是第二段文字。
+这是第二段文字。在屏幕宽度小于1200像素时，边注的样式会发生变化。缩小窗口来尝试这一特性。
 
 <p class="sidenote">Note for paragraph 3.</p>
 
-This is the third paragraph.This is the third paragraph.This is the third paragraph.This is the third paragraph.This is the third paragraph.This is the third paragraph.
+This is the third paragraph.
 
 <a class="doc-link" href="../index.html">回到Wiki</a>

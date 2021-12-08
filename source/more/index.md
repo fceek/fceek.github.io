@@ -20,3 +20,7 @@ title: About
 最近因为有晚间直播学习的环节，有开始学习了。
 
 并不是一个好人。
+
+## Contact
+
+Email: fceek96@gmail.com
