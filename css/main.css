@@ -3532,6 +3532,11 @@ article img.primary {
   box-shadow: 0px 0px 5px 0px #000;
   transition: 0.2s;
 }
+@media only screen and (max-width: 600px) {
+  article img.primary {
+    max-width: 100%;
+  }
+}
 article img.primary:hover {
   border-radius: 0px;
   box-shadow: 0px 0px 10px 0px #000;
@@ -3542,6 +3547,11 @@ article figcaption.primary {
   width: 600px;
   text-align: center;
   padding-bottom: 24px;
+}
+@media only screen and (max-width: 600px) {
+  article figcaption.primary {
+    width: 100%;
+  }
 }
 .doc-link {
   background-color: #ededed;
@@ -3588,6 +3598,13 @@ article p.sidenote {
     width: 1.75rem;
     height: 1.75rem;
     font-weight: bold;
+    line-height: 1.5;
+  }
+  article p.sidenote.tldr:before {
+    content: "TL;DR";
+    font-size: 1rem;
+    width: 3.25rem;
+    margin: -1.25rem 0 0 -1.25rem;
   }
 }
 blockquote {
