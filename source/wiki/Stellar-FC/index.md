@@ -36,6 +36,7 @@ title: Customisation List
 ## 行文
 
 使用 `<p class="sidenote">` 为其下方的一段正文添加边注。
+`<p class="sidenote tldr">` 是另一种样式的边注，用于总结或Paraphrasing。
 使用 `<a class="doc-link">` 添加突出的独立链接。
 
 {% codeblock 示例 lang:html %}
@@ -43,9 +44,9 @@ title: Customisation List
 
 <p class="sidenote">第二段的注解。这段注解长一些。这段注解长一些。这段注解长一些。这段注解长一些。</p>
 
-这是第二段文字。在屏幕宽度小于1200像素时，边注的样式会发生变化。缩小窗口来尝试这一特性。
+这是第二段文字。在屏幕宽度小于1200像素时，边注的样式会发生变化。缩小窗口来尝试这一特性。边注还有另一种样式，即TL;DR。
 
-<p class="sidenote">Note for paragraph 3.</p>
+<p class="sidenote tldr">Note for paragraph 3.</p>
 
 This is the third paragraph.
 
@@ -58,9 +59,9 @@ This is the third paragraph.
 
 <p class="sidenote">第二段的注解。这段注解长一些。这段注解长一些。</p>
 
-这是第二段文字。在屏幕宽度小于1200像素时，边注的样式会发生变化。缩小窗口来尝试这一特性。
+这是第二段文字。在屏幕宽度小于1200像素时，边注的样式会发生变化。缩小窗口来尝试这一特性。边注还有另一种样式，即TL;DR。
 
-<p class="sidenote">Note for paragraph 3.</p>
+<p class="sidenote tldr">Note for paragraph 3.</p>
 
 This is the third paragraph.
 
