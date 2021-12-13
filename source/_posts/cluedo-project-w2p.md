@@ -1,7 +1,8 @@
 ---
 title: Cluedo Project Tutorial/DevLog - Week 2+
 date: 2021-2-22 16:42:13
-tags:
+categories: [DevLog, Cluedo]
+tags: [Coursework, Python, Software Engineering]
 ---
 
 >纸上得来终觉浅，绝知此事要躬行 / <br>Software Engineering Group Project, Cluedo, Week 2 post.

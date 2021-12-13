@@ -1,7 +1,8 @@
 ---
 title: Master of Arms - Player perks
 date: 2021-5-16 20:18:50
-tags:
+categories: [GameDesign, MOA]
+tags: [Coursework, Game Design, Documentation]
 ---
 
 Game Dev and Design group project, Master of Arms, Player perks design document

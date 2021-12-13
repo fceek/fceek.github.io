@@ -1,7 +1,8 @@
 ---
 title: Cluedo Project Tutorial - Week 1
 date: 2021-02-10 21:15:50
-tags:
+categories: [DevLog, Cluedo]
+tags: [Coursework, Python, Software Engineering]
 ---
 
 Software Engineering Group Project, Cluedo, Week 1 post.
