@@ -3607,6 +3607,30 @@ article p.sidenote {
     margin: -1.25rem 0 0 -1.25rem;
   }
 }
+article a.moodboard-link {
+  display: block;
+  color: #000;
+  font-style: italic;
+}
+article a.moodboard-link:hover {
+  padding-left: 1.4rem;
+  transition: 0.2s;
+}
+article a.moodboard-link:hover:before {
+  content: '\25B6';
+  position: absolute;
+  width: 1rem;
+  height: 64px;
+  color: #c20c0c;
+  margin: 64px 0 0 -1.6rem;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+article img.moodboard-img {
+  width: 128px;
+  height: auto;
+  margin: 4px 0 0.5rem 0;
+}
 blockquote {
   font-size: 16px;
 }
