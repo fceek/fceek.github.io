@@ -3,3 +3,13 @@ welcome:
   title: 余烬重燃
   content:
     - 谢谢你们。
+
+standalones:
+  layout: markdown
+  title: 一些怪东西
+  content:
+    - "[Friends+](./friends.html)"
+    - "[Mood Board](./moodboard.html)"
+    - "[Nice App!](./niceapp.html)"
+    - "[Reference+](./references.html)"
+    - \- *What else would you like, dear?*
