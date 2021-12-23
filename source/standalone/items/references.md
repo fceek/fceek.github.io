@@ -1,7 +1,7 @@
 ---
 menu_id: notes
 title: References+
-sidebar: [standalones, toc]
+sidebar: [toc, standalones]
 ---
 
 一些继承过来的陈年链接。

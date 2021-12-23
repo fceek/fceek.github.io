@@ -39,7 +39,7 @@ Python的命令随系统的不同会不一样，`py`是 *Windows Python Launcher
 系统里如果存在多个版本的python，使用 `-0` 选项可以查看所有已安装的版本，`--version` 查看当前使用的版本。
 
 
-<a href = "python-cmd.jpg" target = "_blank"><img class = "primary" src = "python-cmd.jpg"/></a>  
+<a href = "python-cmd.jpg" target = "_blank"><img class="primary" src = "python-cmd.jpg"/></a>  
 <figcaption class="primary">Example in WindowsTerminal, pwsh6</figcaption> 
 
 以上讨论的都是在命令行环境中的情况，用于集成/测试，在开发过程中有了VSCode或者PyCharm这样的IDE帮助，Python版本反倒不是什么问题。

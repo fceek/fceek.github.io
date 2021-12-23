@@ -27,7 +27,23 @@ hope is a dangerous thing for a woman like me to have - but I have it
 </a>
 {% endtimeline %}
 
-<!-- tab And.. -->
-IDK
+<!-- tab Sticker -->
+
+{% timeline %}
+<!-- node 23.12.21 -->
+<a class="moodboard-link" href="moodboard/Sticker-IceMonkey.png" target="_blank">
+<img class="moodboard-img portrait" src="moodboard/Sticker-IceMonkey.png">
+Steam冬季特卖的猴子吉祥物
+</a>
+{% endtimeline %}
+
+<!-- tab Game -->
+{% timeline %}
+<!-- node 19.12.21 -->
+<a class="moodboard-link" href="https://store.steampowered.com/app/812140" target="_blank">
+<img class="moodboard-img landscape" src="moodboard/Game-ACOd.png">
+Assassin's Creed Odyssey
+</a>
+{% endtimeline %}
 
 {% endtabs %}
