@@ -2,7 +2,7 @@
 <html lang='zh-CN'>
 
 <head>
-  <meta name="generator" content="Hexo 5.4.0">
+  <meta name="generator" content="Hexo 6.0.0">
   <meta charset="utf-8">
   
 
@@ -27,7 +27,6 @@
 <meta property="og:description" content="Software Engineering Group Project, Cluedo, Week 2 post.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://fceek.github.io/2021/02/16/cluedo-project-w2/timeline.jpg">
-<meta property="og:image" content="https://fceek.github.io/2021/02/16/cluedo-project-w2/class-diagram.jpg">
 <meta property="article:published_time" content="2021-02-16T03:54:30.000Z">
 <meta property="article:modified_time" content="2021-12-13T13:45:08.291Z">
 <meta property="article:author" content="Chen FAN">
@@ -80,7 +79,7 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 
 <div class="widgets">
 
-<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Intro"><span class="toc-text">Intro</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#General-Planning"><span class="toc-text">General Planning</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Timeline"><span class="toc-text">Timeline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Milestones"><span class="toc-text">Milestones</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sprint-Cycle-1"><span class="toc-text">Sprint Cycle 1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#WalkThrough"><span class="toc-text">WalkThrough</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Class-List"><span class="toc-text">Class List</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Cluedo"><span class="toc-text">Cluedo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CluedoGame"><span class="toc-text">CluedoGame</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Player"><span class="toc-text">Player</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Card"><span class="toc-text">Card</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GameBoard"><span class="toc-text">GameBoard</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Room"><span class="toc-text">Room</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%99%E5%91%A8%E7%9A%84%E4%B8%BB%E7%BA%BF%E4%BB%BB%E5%8A%A1"><span class="toc-text">这周的主线任务</span></a></li></ol></div></div></div>
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Intro"><span class="toc-text">Intro</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#General-Planning"><span class="toc-text">General Planning</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Timeline"><span class="toc-text">Timeline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Milestones"><span class="toc-text">Milestones</span></a></li></ol></li></ol></div></div></div>
 
 
 </div>
@@ -147,79 +146,6 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 <td>系统测试，增删改查，V1.0</td>
 </tr>
 </tbody></table>
-<div class="tag-plugin note" color="yellow"><div class="body"><p>⚠&nbsp;这个表我是按照之前读需求文档，和自己打的两三把Steam版Cluedo的记忆写出来的，有可能会缺功能，发现有缺漏请务必告诉我。</p></div></div>
-
-
-<h2 id="Sprint-Cycle-1"><a href="#Sprint-Cycle-1" class="headerlink" title="Sprint Cycle 1"></a>Sprint Cycle 1</h2><h3 id="WalkThrough"><a href="#WalkThrough" class="headerlink" title="WalkThrough"></a>WalkThrough</h3><p>这个版本的显式流程，大概就是最后成品进游戏需要达到的效果。</p>
-<ul>
-<li>指定人数开始游戏</li>
-<li>每个人依次进行回合<ul>
-<li>显示此玩家的手牌</li>
-<li>扔骰子，得出本回合玩家可以前往的房间</li>
-<li>玩家选择前往哪个房间</li>
-<li>提出怀疑<ul>
-<li>其他玩家展示手牌</li>
-<li>如果有多张手牌可展示，让该玩家选择</li>
-</ul>
-</li>
-<li>询问玩家是否提出指控<ul>
-<li>指控失败则淘汰玩家</li>
-</ul>
-</li>
-<li>进入下个玩家的回合</li>
-</ul>
-</li>
-<li>某个玩家取得胜利或收到退出指令</li>
-</ul>
-<h3 id="Class-List"><a href="#Class-List" class="headerlink" title="Class List"></a>Class List</h3><div class="tag-plugin note" color="yellow"><div class="body"><p>⚠&nbsp;这部分内容同样不是最终版，要达成设计流程肯定还要加点什么，具体写代码的时候得随机应变。稍微有点挑战性才有趣（？</p></div></div>
-
-
-<p><a href = "class-diagram.jpg" target = "_blank"><img class="primary lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="class-diagram.jpg"></a></p>
-<figcaption class="primary">UML Class Diagram</figcaption>
-
-<h4 id="Cluedo"><a href="#Cluedo" class="headerlink" title="Cluedo"></a>Cluedo</h4><p>游戏的主入口，目前只需要接收一个玩家输入的人数，然后以这个人数为参数新建一局 <code>CluedoGame</code> 就行。</p>
-<h4 id="CluedoGame"><a href="#CluedoGame" class="headerlink" title="CluedoGame"></a>CluedoGame</h4><p>一局游戏的本体，创建后应进行的初始化：</p>
-<ul>
-<li>根据玩家人数填充 <code>Players</code></li>
-<li>将 <code>NextPlayer</code> 设置为Player 1</li>
-<li>获取所有的卡片信息填充到 <code>Cards</code><ul>
-<li>这里我觉得可以从一个单独的结构体甚至是外部文件导入这些卡片的信息，而不推荐直接写在这个Class的代码里</li>
-</ul>
-</li>
-<li>从每个种类的卡里选一张作为正确答案</li>
-<li>建立 <code>GameBoard</code></li>
-<li>将所有的玩家放置在 <code>GameBoard</code> 起始点</li>
-<li>给玩家发放手牌</li>
-<li>开始第一个回合</li>
-</ul>
-<p>进行回合的方法为 <code>ProcessTurn()</code>，在这个方法中可能被调用的方法有：</p>
-<ul>
-<li><code>DiceRoll()</code><ul>
-<li>掷骰子</li>
-</ul>
-</li>
-<li><code>Suspect()</code><ul>
-<li>提出怀疑</li>
-</ul>
-</li>
-<li><code>Accuse()</code><ul>
-<li>提出指控</li>
-</ul>
-</li>
-</ul>
-<p>…等，具体逻辑参考上一节的显式流程，</p>
-<p>另外需要一个方法 <code>GetPlayerInput()</code> 用于接收玩家输入的指令。</p>
-<h4 id="Player"><a href="#Player" class="headerlink" title="Player"></a>Player</h4><p>玩家，里面存玩家的角色名（目前就用Player 1、Player 2这样吧），手上的牌和目前在 <code>GameBoard</code> 上的坐标 <code>Coordinate</code>。</p>
-<h4 id="Card"><a href="#Card" class="headerlink" title="Card"></a>Card</h4><p>游戏中要用到的卡牌，存卡牌的类型（人物/武器/房间），具体描述文字和是否被选为正确答案。</p>
-<p>关于正确答案我觉得可以用 <code>IsAnswer</code> 和 <code>MakeAnswer()</code> 将它放到 <code>Card</code> 类里面处理，也可以在 <code>CluedoGame</code> 里添加一个答案属性用来存，存疑。</p>
-<h4 id="GameBoard"><a href="#GameBoard" class="headerlink" title="GameBoard"></a>GameBoard</h4><p>游戏版图，关于版图信息本身像 <code>Card</code> 一样也应该是分离出来比较好，建立版图的时候从里面读。<br>属性具体有一组 <code>Room</code> ，是版图里的房间。几个方法分别用来移动玩家和检查玩家行走n步能到达的房间列表。</p>
-<p>这部分可能是整个项目里唯一要用到算法的地方，因为走路的时候要绕开别的玩家的棋子，具体实现上可以增加一个 <code>Occupied</code> 属性来存有人的格子，或者建立从 <code>GameBoard</code> 到 <code>CluedoGame</code> 的反向索引来获取 <code>Players</code> 。解决办法随便一想就有好几种，这也是需要纠结的源头，写的时候看怎么方便怎么来吧。</p>
-<h4 id="Room"><a href="#Room" class="headerlink" title="Room"></a>Room</h4><p>房间，有名字和入口坐标。</p>
-<h2 id="这周的主线任务"><a href="#这周的主线任务" class="headerlink" title="这周的主线任务"></a>这周的主线任务</h2><p>首先我觉得读一下代码标准很有必要：</p>
-<p><a class="doc-link" href = "https://google.github.io/styleguide/pyguide.html">Python Style Guide</a></p>
-<p>我的建议是每个人都自己写一份自己版本的代码出来，因为目前版本的内容不多，这么高耦合的几个Class如果分几个人来写反而会更麻烦。然后关于处理上有差异的点就可以拿出来比较一下优劣什么的。</p>
-<p>当然作为Group Work合作完成也完全没问题，解决高耦合对接不上的问题其中一个方法是，大家连麦/Screen Share一起写，就和Kingsley在课上推荐的Pair Coding差不多意思，大家要是想的话可以自己商量商量分工什么的。</p>
-<p>如果事情比较顺利我就去写这部分的单元测试了，这样周末我就可以把提交上来的代码跑跑看。如果不太顺利这周就先不搞单元测试，集中火力先胡一个下周一能给Kingsley看的Demo再说。</p>
 
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>

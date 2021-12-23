@@ -3541,6 +3541,23 @@ article img.primary:hover {
   border-radius: 0px;
   box-shadow: 0px 0px 10px 0px #000;
 }
+article video.primary {
+  display: block;
+  max-width: 600px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px 0px #000;
+  margin: 24px auto;
+}
+@media only screen and (max-width: 600px) {
+  article video.primary {
+    max-width: 100%;
+  }
+}
+article video.primary:hover {
+  border-radius: 0px;
+  box-shadow: 0px 0px 10px 0px #000;
+}
 article figcaption.primary {
   font-size: 0.9rem;
   margin: auto;
@@ -3673,9 +3690,17 @@ article a.moodboard-link:hover:before {
   font-size: 1.2rem;
 }
 article img.moodboard-img {
-  width: 128px;
+  max-width: 128px;
+  max-height: 128px;
+  width: auto;
   height: auto;
   margin: 4px 0 0.5rem 0;
+}
+article img.moodboard-img.portrait {
+  max-height: 100%;
+}
+article img.moodboard-img.landscape {
+  max-width: 100%;
 }
 #markdown div.widget-body a {
   display: block;
