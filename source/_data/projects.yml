@@ -13,3 +13,11 @@ Stellar-FC:
   cover: false
   description: 记录一下自己对Stellar主题的魔改，以便之后查阅
   repo: fceek/hexo-theme-stellar
+
+SleepyBot:
+  title: SleepyBot
+  subtitle: Self-entertaining QQ Bot
+  tags: [.Net, Bot]
+  cover: true
+  description: 一个自嗨QQ机器人项目，实现一些大家想要的（傻吊）功能
+  repo: fceek/SleepyBot
