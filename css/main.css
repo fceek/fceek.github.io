@@ -3622,6 +3622,15 @@ article figcaption.primary {
   font-size: 0.75rem;
   color: #818181;
 }
+.more-card-link.spotlight .more-card {
+  box-shadow: 0 0 4px -1px #c92b45;
+}
+.more-card-link.spotlight:hover {
+  border-left: 0.5rem solid #c92b45;
+}
+.more-card-link.spotlight .more-card:hover {
+  box-shadow: 0 0 4px -1px #65343c;
+}
 article p.sidenote {
   position: absolute;
   width: 180px;
