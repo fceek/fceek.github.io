@@ -3631,6 +3631,9 @@ article figcaption.primary {
 .more-card-link.spotlight .more-card:hover {
   box-shadow: 0 0 4px -1px #65343c;
 }
+article p.smaller {
+  font-size: 0.8rem;
+}
 article p.sidenote {
   position: absolute;
   width: 180px;
