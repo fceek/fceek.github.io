@@ -21,3 +21,10 @@ SleepyBot:
   cover: true
   description: 一个自嗨QQ机器人项目，实现一些大家想要的（傻吊）功能
   repo: fceek/SleepyBot
+  sections:
+    '': [0, 99]
+    '通用指令': [100, 199]
+    '管理员指令': [200, 299]
+    '数据库': [300, 399]
+    '开发者': [400, 499]
+    
