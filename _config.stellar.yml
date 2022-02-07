@@ -12,3 +12,9 @@ sidebar:
     wiki: '[Doc](/wiki/)'
     notes: '[More](/standalone/)'
     more: '[Me](/more/)'
+
+comments:
+  service: valine
+  valine:
+    appId: aQKjnoi5R00ivnRxpwII3FBu-gzGzoHsz
+    appKey: dHwg4COlhaNJssM0QtnhBNl3
