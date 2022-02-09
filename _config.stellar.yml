@@ -14,7 +14,15 @@ sidebar:
     more: '[Me](/more/)'
 
 comments:
-  service: valine
-  valine:
-    appId: aQKjnoi5R00ivnRxpwII3FBu-gzGzoHsz
-    appKey: dHwg4COlhaNJssM0QtnhBNl3
+  service: waline
+  waline:
+    serverURL: 'https://waline-vercel-263xznfh6-fceek.vercel.app'
+    locale:
+      nick: "昵称*"
+      mail: "邮箱*(不公开)"
+      link: "网址"
+      admin: "我！"
+    placeholder:
+    avatar: robohash
+    emoji:
+      - 'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus'
