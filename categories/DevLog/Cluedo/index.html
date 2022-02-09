@@ -285,6 +285,41 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 
 <!-- optional -->
 
+  <script>
+  function load_comment(){
+    if(!document.getElementById("waline_container"))return;
+    stellar.loadScript('//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', {defer:true}).then(function () {
+      const el = document.getElementById("waline_container");
+      var path = el.getAttribute('comment_id');
+      const placeholder = "";
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      const serverURL = "https://waline-vercel-263xznfh6-fceek.vercel.app";
+      const locale = {
+        nick : "昵称*",
+        mail : "邮箱*(不公开)",
+        link : "网址",
+        admin: "我！",
+      }
+      var waline = new Waline({
+        el: '#waline_container',
+        serverURL: serverURL,
+        avatar: "robohash",
+        placeholder: "",
+        emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],
+        locale,
+      });
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    load_comment();
+  });
+
+</script>
+
+
 
 
 <!-- inject -->
