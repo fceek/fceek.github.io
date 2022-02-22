@@ -11,6 +11,13 @@ sidebar: [standalones]
 <!-- tab Music -->
 
 {% timeline %}
+<!-- node 12.02.22 -->
+<a class="moodboard-link" href="https://music.line.me/webapp/track/mt00000000000f7f42">
+<img class="moodboard-img" src="moodboard/LoverCallots.png">
+悪戯スキャット | ラバーキャロッツ
+<br>
+想像もつかない僕らの日々
+</a>
 <!-- node 13.12.21 -->
 <a class="moodboard-link" href="http://music.163.com/song?id=1387549446">
 <img class="moodboard-img" src="moodboard/Norman.png">
@@ -39,6 +46,11 @@ Steam冬季特卖的猴子吉祥物
 
 <!-- tab Game -->
 {% timeline %}
+<!-- node 08.02.22 -->
+<a class="moodboard-link" href="https://store.steampowered.com/app/1794680" target="_blank">
+<img class="moodboard-img landscape" src="moodboard/VSurvivors.png">
+Vampire Survivors
+</a>
 <!-- node 19.12.21 -->
 <a class="moodboard-link" href="https://store.steampowered.com/app/812140" target="_blank">
 <img class="moodboard-img landscape" src="moodboard/Game-ACOd.png">

@@ -36,6 +36,10 @@ sidebar: [toc]
 
 <a class="ref-link" href="https://github.com/Fianlhuman/Reimagined-Monopoly">🔗 项目Git Repo地址</a> (Private Repo, 需要登陆)
 
+## Resources
+
+<a class="ref-link" href="https://www.youtube.com/playlist?list=PLlm-BWcLoSty2bsBQhsScKK2uB11e9ymI">⏺ 会议录像合集（Youtube）</a> 
+
 ## More
 
 暂时没有了
