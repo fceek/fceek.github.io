@@ -5,6 +5,9 @@ HPFramework:
   cover: true
   description: HeartPhase小组开发，供作业项目、GameJam和Prototyping使用的Unity项目框架。
   repo: HeartPhase/HP-Unity-Bootstrap
+  sections:
+    '完整版': [0,999]
+    'Lite版': [1000,1099]
 
 Stellar-FC:
   title: Stellar-FC

@@ -36,9 +36,14 @@ sidebar: [toc]
 
 <a class="ref-link" href="https://github.com/Fianlhuman/Reimagined-Monopoly">🔗 项目Git Repo地址</a> (Private Repo, 需要登陆)
 
+<a class="ref-link" href="https://trello.com/b/pF5nOp67/property-tycoon
+">🔗 Trello Board, 发布领取任务并追踪进度</a>
+
 ## Resources
 
 <a class="ref-link" href="https://www.youtube.com/playlist?list=PLlm-BWcLoSty2bsBQhsScKK2uB11e9ymI">⏺ 会议录像合集（Youtube）</a> 
+
+<a class="ref-link" href="https://fceek.github.io/wiki/HPFramework/Lite/Intro.html">🔍 项目内的迷你框架文档</a>
 
 ## More
 
