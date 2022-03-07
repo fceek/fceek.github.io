@@ -16,18 +16,18 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
-  <title>HPFramework：Home - Flint Canyon</title>
+  <title>HPFramework：InputModule - Flint Canyon</title>
 
   
-    <meta name="description" content="面向公众的HeartPhase Framework文档。 还没开始写。">
+    <meta name="description" content="输入模块，由于本项目交互基本是纯点击，且没有需要持续生效的通用按键绑定，这个模块其实不是很必要。 APIBindAction(string inputName, Action&lt;InputAction.CallbackContext&gt; action)将一个按键绑定到监听者。 ParaminputName : 事件名称，形如“设备&#x2F;操作”，具体参见官方文档；action : 事件的监听者，">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Home">
-<meta property="og:url" content="https://fceek.github.io/wiki/HPFramework/index.html">
+<meta property="og:title" content="InputModule">
+<meta property="og:url" content="https://fceek.github.io/wiki/HPFramework/Lite/InputModule.html">
 <meta property="og:site_name" content="Flint Canyon">
-<meta property="og:description" content="面向公众的HeartPhase Framework文档。 还没开始写。">
+<meta property="og:description" content="输入模块，由于本项目交互基本是纯点击，且没有需要持续生效的通用按键绑定，这个模块其实不是很必要。 APIBindAction(string inputName, Action&lt;InputAction.CallbackContext&gt; action)将一个按键绑定到监听者。 ParaminputName : 事件名称，形如“设备&#x2F;操作”，具体参见官方文档；action : 事件的监听者，">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-03-07T06:41:20.800Z">
-<meta property="article:modified_time" content="2022-03-07T06:41:20.800Z">
+<meta property="article:published_time" content="2022-03-06T19:41:04.905Z">
+<meta property="article:modified_time" content="2022-03-06T19:41:04.905Z">
 <meta property="article:author" content="Chen FAN">
 <meta name="twitter:card" content="summary">
   
@@ -64,7 +64,7 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 
 <body>
   
-<div class="l_cover"><article class="cover-wrap md"><div class="cover-title"><span>HPFramework</span></div><div class="description">HeartPhase小组开发，供作业项目、GameJam和Prototyping使用的Unity项目框架。</div><div class="start-wrap"><a class="button theme start" href="#start">开始使用</a></div></article></div><hr>
+
 
   <div class='l_body' id='start'>
     <aside class='l_left' layout='wiki'>
@@ -78,7 +78,7 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 
 <div class="widgets">
 
-<div class="widget-wrap multi" id="toc"><div class="widget-header cap dis-select"><span class="name">完整版</span></div><div class="widget-body fs14"><div class="doc-tree active"><a class="doc-tree-link active" href="/wiki/HPFramework/index.html"><span class="toc-text">Home</span></a></div></div><div class="widget-header cap dis-select"><span class="name">Lite版</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/Intro.html"><span class="toc-text">Intro</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/Modules.html"><span class="toc-text">Modules</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/EventModule.html"><span class="toc-text">EventModule</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/InputModule.html"><span class="toc-text">InputModule</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/SaveModule.html"><span class="toc-text">SaveModule</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/BlackboardModule.html"><span class="toc-text">BlackboardModule</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/UIModule.html"><span class="toc-text">UIModule</span></a></div></div></div>
+<div class="widget-wrap multi" id="toc"><div class="widget-header cap dis-select"><span class="name">完整版</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/index.html"><span class="toc-text">Home</span></a></div></div><div class="widget-header cap dis-select"><span class="name">Lite版</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/Intro.html"><span class="toc-text">Intro</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/Modules.html"><span class="toc-text">Modules</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/EventModule.html"><span class="toc-text">EventModule</span></a></div><div class="doc-tree active"><a class="doc-tree-link active" href="/wiki/HPFramework/Lite/InputModule.html"><span class="toc-text">InputModule</span></a><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#API"><span class="toc-text">API</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BindAction-string-inputName-Action-lt-InputAction-CallbackContext-gt-action"><span class="toc-text">BindAction(string inputName, Action&lt;InputAction.CallbackContext&gt; action)</span></a></li></ol></li></ol></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/SaveModule.html"><span class="toc-text">SaveModule</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/BlackboardModule.html"><span class="toc-text">BlackboardModule</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/HPFramework/Lite/UIModule.html"><span class="toc-text">UIModule</span></a></div></div></div>
 
 <div class="widget-wrap" id="repo-info"><div class="widget-header cap dis-select"><span class="name">项目仓库</span></div><div class="widget-body fs14"><div class="items"><div class="line"></div><a class="item-link" title="https://github.com/HeartPhase/HP-Unity-Bootstrap" href="https://github.com/HeartPhase/HP-Unity-Bootstrap" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg><span>GitHub</span></a><div class="line"></div><a class="item-link" title="https://github.com/HeartPhase/HP-Unity-Bootstrap/releases" href="https://github.com/HeartPhase/HP-Unity-Bootstrap/releases" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path></svg><span>Releases</span></a><div class="line"></div><a class="item-link" title="https://github.com/HeartPhase/HP-Unity-Bootstrap/archive/refs/heads/main.zip" href="https://github.com/HeartPhase/HP-Unity-Bootstrap/archive/refs/heads/main.zip" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path fill-rule="evenodd" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg><span>Download</span></a><div class="line"></div><a class="item-link" title="https://github.com/HeartPhase/HP-Unity-Bootstrap/issues" href="https://github.com/HeartPhase/HP-Unity-Bootstrap/issues" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path><path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path></svg><span>Issues</span></a></div></div></div>
 
@@ -94,19 +94,21 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 
   
   
-<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" id="home" href="/">Flint Canyon</a><span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">Doc</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/HPFramework/index.html">HPFramework</a></div><div id="post-meta">更新于&nbsp;<time datetime="2022-03-07T06:41:20.800Z">07-03-2022</time></div></div>
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" id="home" href="/">Flint Canyon</a><span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">Doc</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/HPFramework/index.html">HPFramework</a></div><div id="post-meta">更新于&nbsp;<time datetime="2022-03-06T19:41:04.905Z">06-03-2022</time></div></div>
 
   <article class='content md wiki'>
-  <h1 class="article-title"><span>Home</span></h1>
-  <p>面向公众的HeartPhase Framework文档。</p>
-<p>还没开始写。</p>
+  <h1 class="article-title"><span>InputModule</span></h1>
+  <p>输入模块，由于本项目交互基本是纯点击，且没有需要持续生效的通用按键绑定，这个模块其实不是很必要。</p>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="BindAction-string-inputName-Action-lt-InputAction-CallbackContext-gt-action"><a href="#BindAction-string-inputName-Action-lt-InputAction-CallbackContext-gt-action" class="headerlink" title="BindAction(string inputName, Action&lt;InputAction.CallbackContext&gt; action)"></a>BindAction(string inputName, Action&lt;InputAction.CallbackContext&gt; action)</h3><p>将一个按键绑定到监听者。</p>
+<div class="tag-plugin note" color="light"><div class="title"><strong>Param</strong></div><div class="body"><p><em>inputName</em> : 事件名称，形如“设备/操作”，具体参见<a target="_blank" rel="noopener" href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.3/api/UnityEngine.InputSystem.InputActionAsset.html#UnityEngine_InputSystem_InputActionAsset_FindAction_System_String_System_Boolean_">官方文档</a>；<br><em>action</em> : 事件的监听者，接收输入参数的方法或Lambda。</p></div></div>
 
+<div class="tag-plugin note" color="green" child="codeblock"><div class="body"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">InputModule i = App.Modules.Get&lt;InputModule&gt;();</span><br><span class="line"></span><br><span class="line">// 使用一个方法监听鼠标滚轮。</span><br><span class="line">i.BindAction(&quot;Mouse/Scroll&quot;, MouseScrollHandler);</span><br><span class="line"></span><br><span class="line">private void MouseScroolHandler(InputAction.CallbackContext ctx) &#123;</span><br><span class="line">    // ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 使用Lambda监听键盘‘任意键’。</span><br><span class="line">i.BindAction(&quot;Keyboard/Anykey&quot;, ctx =&gt; &#123;</span><br><span class="line">    // ...</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></div></div>
   
 
 
   </article>
   
-<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/wiki/HPFramework/Lite/Intro.html">Intro<span class="note">下一篇</span></a><div class="line"></div></section></div>
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/wiki/HPFramework/Lite/SaveModule.html">SaveModule<span class="note">下一篇</span></a><div class="line"></div><a id="prev" href="/wiki/HPFramework/Lite/EventModule.html">EventModule<span class="note">上一篇</span></a></section></div>
 
   
 
