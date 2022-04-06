@@ -11,6 +11,13 @@ sidebar: [standalones]
 <!-- tab Music -->
 
 {% timeline %}
+<!-- node 02.04.22 -->
+<a class="moodboard-link" href="https://music.163.com/song?id=1903635253">
+<img class="moodboard-img" src="moodboard/Sakayume.png">
+逆夢 | King Gnu
+<br>
+逆夢
+</a>
 <!-- node 12.02.22 -->
 <a class="moodboard-link" href="https://music.line.me/webapp/track/mt00000000000f7f42">
 <img class="moodboard-img" src="moodboard/LoverCallots.png">
@@ -37,6 +44,11 @@ hope is a dangerous thing for a woman like me to have - but I have it
 <!-- tab Sticker -->
 
 {% timeline %}
+<!-- node 30.03.22 -->
+<a class="moodboard-link" href="moodboard/Sticker-DancingCat.gif" target="_blank">
+<img class="moodboard-img portrait" src="moodboard/Sticker-DancingCat.gif">
+这只猫
+</a>
 <!-- node 23.12.21 -->
 <a class="moodboard-link" href="moodboard/Sticker-IceMonkey.png" target="_blank">
 <img class="moodboard-img portrait" src="moodboard/Sticker-IceMonkey.png">
