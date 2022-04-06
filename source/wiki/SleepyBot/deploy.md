@@ -18,13 +18,13 @@ order: 1
 
 |Key|Value|
 |---|-----|
-|V_KEY|Mirai的Verify key|
-|QQ|用作机器人的QQ号|
-|HOST|部署了Mirai的服务器IP地址|
-|PORT|Mirai-Api-Http监听的Http&WebSocket端口|
-|REDIS_ENDPOINT|Redis接入终端，`ip:port`|
-|REDIS_AUTHKEY|Redis密码|
-|DEV_QQ|开发者（Admin）的QQ号，只有这个QQ号才能使用测试指令|
+|VerifyKey|Mirai的Verify key|
+|BotId|用作机器人的QQ号|
+|MiraiHost|部署了Mirai的服务器IP地址|
+|MiraiPort|Mirai-Api-Http监听的Http&WebSocket端口|
+|RedisEndpoint|Redis接入终端，`ip:port`|
+|RedisAuthKey|Redis密码|
+|DevId|开发者（Admin）的QQ号，只有这个QQ号才能使用测试指令|
 
 ## Initialisation
 

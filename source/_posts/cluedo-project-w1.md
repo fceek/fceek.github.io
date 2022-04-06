@@ -134,7 +134,9 @@ GitKraken需要验证学生邮箱才能免费使用，具体流程是给GitHub�
 参见项目里的Readme文件，或[在线查看](https://github.com/fceek/Cluedo-SE21/blob/master/README.md) 。
 里面写的比较简略（因为我懒），如果对每个文件有疑问可以随时群里说。
 
-{% note color:yellow ⚠&nbsp;项目中的Makefile文件是针对Windows环境下的nmake工具，以及batch语言编写的几个快捷方式/小工具，如果你使用Linux或OSX，再或者Windows下没有安装nmake工具，暂时无法享受这条捷径。%}
+{% noteblock color:yellow %}
+**⚠** 项目中的Makefile文件是针对Windows环境下的nmake工具，以及batch语言编写的几个快捷方式/小工具，如果你使用Linux或OSX，再或者Windows下没有安装nmake工具，暂时无法享受这条捷径。
+{% endnoteblock %}
 
 
 ## 这周的主线任务

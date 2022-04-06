@@ -49,8 +49,9 @@ Software Engineering Group Project, Cluedo, Week 2 post.
 |核心机制|AI，完整游戏|残局模式，残局编辑器|完整游戏|Debug，优化，Release|
 |玩家进行回合，在版图里行动，提出怀疑，下达指控并取胜/淘汰|LogBook，菜单等外部功能，玩家与AI玩家进行游戏|由外部文件导入残局，AI玩家模拟对局，编辑器自定义生成残局文件|实现GUI，版图/角色自定义|系统测试，增删改查，V1.0|
 
-{% note color:yellow ⚠&nbsp;这个表我是按照之前读需求文档，和自己打的两三把Steam版Cluedo的记忆写出来的，有可能会缺功能，发现有缺漏请务必告诉我。 %}
-
+{% noteblock color:yellow %}
+**⚠** 这个表我是按照之前读需求文档，和自己打的两三把Steam版Cluedo的记忆写出来的，有可能会缺功能，发现有缺漏请务必告诉我。
+{% endnoteblock %}
 
 ## Sprint Cycle 1
 
@@ -74,7 +75,9 @@ Software Engineering Group Project, Cluedo, Week 2 post.
 
 ### Class List
 
-{% note color:yellow ⚠&nbsp;这部分内容同样不是最终版，要达成设计流程肯定还要加点什么，具体写代码的时候得随机应变。稍微有点挑战性才有趣（？ %}
+{% noteblock color:yellow %}
+**⚠** 这部分内容同样不是最终版，要达成设计流程肯定还要加点什么，具体写代码的时候得随机应变。稍微有点挑战性才有趣（？
+{% endnoteblock %}
 
 
 <a href = "class-diagram.jpg" target = "_blank"><img class="primary" src="class-diagram.jpg"></a>

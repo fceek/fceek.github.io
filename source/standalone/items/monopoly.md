@@ -41,7 +41,7 @@ sidebar: [toc]
 
 ## Resources
 
-<a class="ref-link" href="https://www.youtube.com/playlist?list=PLlm-BWcLoSty2bsBQhsScKK2uB11e9ymI">⏺ 会议录像合集（Youtube）</a> 
+<a class="ref-link" href="https://www.youtube.com/playlist?list=PLlm-BWcLoSty2bsBQhsScKK2uB11e9ymI">⏺ 会议录像合集（YouTube）</a> 
 
 <a class="ref-link" href="https://fceek.github.io/wiki/HPFramework/Lite/Intro.html">🔍 项目内的迷你框架文档</a>
 
