@@ -2,7 +2,7 @@
 <html lang='zh-CN'>
 
 <head>
-  <meta name="generator" content="Hexo 6.0.0">
+  <meta name="generator" content="Hexo 6.1.0">
   <meta charset="utf-8">
   
 
@@ -19,15 +19,15 @@
   <title>SleepyBot：Deployment - Flint Canyon</title>
 
   
-    <meta name="description" content="目前只支持直接从工程部署&#x2F;打包之后运行,毕竟也就只有我自己需要部署啦…… Prerequisite 一个运行并登录了QQ帐号的Mirai实例并安装Mirai-Api-Http 一个Redis数据库，如果是Windows环境使用平替Memurai  Deploy在项目中创建一个新的Secret.cs，把Program.cs下面的Secret部分复制进去Uncomment然后填好，需要填的内容有：">
+    <meta name="description" content="目前只支持直接从工程部署&#x2F;打包之后运行,毕竟也就只有我自己需要部署啦…… Prerequisite 一个运行并登录了QQ帐号的Mirai实例并安装Mirai-Api-Http 一个Redis数据库，如果是Windows环境使用平替Memurai  Deploy在项目中创建一个新的Secret.cs，把Program.cs下面的Secret部分复制进去Uncomment然后填好，需要填的内">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Deployment">
 <meta property="og:url" content="https://fceek.github.io/wiki/SleepyBot/deploy.html">
 <meta property="og:site_name" content="Flint Canyon">
-<meta property="og:description" content="目前只支持直接从工程部署&#x2F;打包之后运行,毕竟也就只有我自己需要部署啦…… Prerequisite 一个运行并登录了QQ帐号的Mirai实例并安装Mirai-Api-Http 一个Redis数据库，如果是Windows环境使用平替Memurai  Deploy在项目中创建一个新的Secret.cs，把Program.cs下面的Secret部分复制进去Uncomment然后填好，需要填的内容有：">
+<meta property="og:description" content="目前只支持直接从工程部署&#x2F;打包之后运行,毕竟也就只有我自己需要部署啦…… Prerequisite 一个运行并登录了QQ帐号的Mirai实例并安装Mirai-Api-Http 一个Redis数据库，如果是Windows环境使用平替Memurai  Deploy在项目中创建一个新的Secret.cs，把Program.cs下面的Secret部分复制进去Uncomment然后填好，需要填的内">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-01-30T17:03:37.465Z">
-<meta property="article:modified_time" content="2022-01-30T17:03:37.465Z">
+<meta property="article:published_time" content="2022-04-06T08:03:31.715Z">
+<meta property="article:modified_time" content="2022-04-06T08:03:31.715Z">
 <meta property="article:author" content="Chen FAN">
 <meta name="twitter:card" content="summary">
   
@@ -94,11 +94,11 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 
   
   
-<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" id="home" href="/">Flint Canyon</a><span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">Doc</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/SleepyBot/index.html">SleepyBot</a></div><div id="post-meta">更新于&nbsp;<time datetime="2022-01-30T17:03:37.465Z">30-01-2022</time></div></div>
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" id="home" href="/">Flint Canyon</a><span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">Doc</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/SleepyBot/index.html">SleepyBot</a></div><div id="post-meta">更新于&nbsp;<time datetime="2022-04-06T08:03:31.715Z">06-04-2022</time></div></div>
 
   <article class='content md wiki'>
   <h1 class="article-title"><span>Deployment</span></h1>
-  <p>目前只支持直接从工程部署/打包之后运行,毕竟也就只有我自己需要部署啦……</p>
+  <p>目前只支持直接从工程部署&#x2F;打包之后运行,毕竟也就只有我自己需要部署啦……</p>
 <h2 id="Prerequisite"><a href="#Prerequisite" class="headerlink" title="Prerequisite"></a>Prerequisite</h2><ul>
 <li>一个运行并登录了QQ帐号的<a target="_blank" rel="noopener" href="https://github.com/mamoe/mirai">Mirai</a>实例并安装<a target="_blank" rel="noopener" href="https://github.com/project-mirai/mirai-api-http">Mirai-Api-Http</a></li>
 <li>一个<a target="_blank" rel="noopener" href="https://redis.io/">Redis</a>数据库，如果是Windows环境使用平替<a target="_blank" rel="noopener" href="https://www.memurai.com/">Memurai</a></li>
@@ -112,31 +112,31 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 </tr>
 </thead>
 <tbody><tr>
-<td>V_KEY</td>
+<td>VerifyKey</td>
 <td>Mirai的Verify key</td>
 </tr>
 <tr>
-<td>QQ</td>
+<td>BotId</td>
 <td>用作机器人的QQ号</td>
 </tr>
 <tr>
-<td>HOST</td>
+<td>MiraiHost</td>
 <td>部署了Mirai的服务器IP地址</td>
 </tr>
 <tr>
-<td>PORT</td>
+<td>MiraiPort</td>
 <td>Mirai-Api-Http监听的Http&amp;WebSocket端口</td>
 </tr>
 <tr>
-<td>REDIS_ENDPOINT</td>
+<td>RedisEndpoint</td>
 <td>Redis接入终端，<code>ip:port</code></td>
 </tr>
 <tr>
-<td>REDIS_AUTHKEY</td>
+<td>RedisAuthKey</td>
 <td>Redis密码</td>
 </tr>
 <tr>
-<td>DEV_QQ</td>
+<td>DevId</td>
 <td>开发者（Admin）的QQ号，只有这个QQ号才能使用测试指令</td>
 </tr>
 </tbody></table>

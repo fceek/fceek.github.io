@@ -2,7 +2,7 @@
 <html lang='zh-CN'>
 
 <head>
-  <meta name="generator" content="Hexo 6.0.0">
+  <meta name="generator" content="Hexo 6.1.0">
   <meta charset="utf-8">
   
 
@@ -114,7 +114,7 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 <h3 id="DestroyUI-GameObject-go"><a href="#DestroyUI-GameObject-go" class="headerlink" title="DestroyUI(GameObject go)"></a>DestroyUI(GameObject go)</h3><p>销毁一个UI组件。</p>
 <div class="tag-plugin note" color="light"><div class="title"><strong>Param</strong></div><div class="body"><p><em>go</em> : 要销毁的UI组件。</p></div></div>
 
-<div class="tag-plugin note" color="green" child="codeblock"><div class="body"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">private GameObject purchaseWindow;</span><br><span class="line">// 在Inspector中设置了purchaseWindow到预制的组件PurchaseWindow.prefab的reference</span><br><span class="line"></span><br><span class="line">// 显示这个窗口</span><br><span class="line">GameObject window = UIModule.ShowUI(purchaseWindow);</span><br><span class="line"></span><br><span class="line">// 关闭这个窗口</span><br><span class="line">UIModule.DestroyUI(window);</span><br><span class="line">// 或</span><br><span class="line">UIModule.DestroyUI(&quot;PurchaseWindow&quot;);</span><br></pre></td></tr></table></figure></div></div>
+<div class="tag-plugin note" color="green" child="codeblock"><div class="body"><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> GameObject purchaseWindow;</span><br><span class="line"><span class="comment">// 在Inspector中设置了purchaseWindow到预制的组件PurchaseWindow.prefab的reference</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 显示这个窗口</span></span><br><span class="line">GameObject window = UIModule.ShowUI(purchaseWindow);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 关闭这个窗口</span></span><br><span class="line">UIModule.DestroyUI(window);</span><br><span class="line"><span class="comment">// 或</span></span><br><span class="line">UIModule.DestroyUI(<span class="string">&quot;PurchaseWindow&quot;</span>);</span><br></pre></td></tr></table></figure></div></div>
   
 
 

@@ -2,7 +2,7 @@
 <html lang='zh-CN'>
 
 <head>
-  <meta name="generator" content="Hexo 6.0.0">
+  <meta name="generator" content="Hexo 6.1.0">
   <meta charset="utf-8">
   
 
@@ -19,15 +19,15 @@
   <title>SleepyBot：Test - Flint Canyon</title>
 
   
-    <meta name="description" content="待更新">
+    <meta name="description" content="Test模块提供一系列开发者指令，方便在不登陆服务器终端的情况下进行一些操作。此模块中所有指令只有开发者QQ（参见Deploy&#x2F;DevId）发送才有效，同时只有开发者QQ发起的加群邀请Bot才会同意。 TestsTest:DBConnection测试机器人到Redis数据库的连接情况。 InTest:DBConnection  Out已连接至云端数据库。云端数据库连接失败。  Test:">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Test">
 <meta property="og:url" content="https://fceek.github.io/wiki/SleepyBot/AdminCommands/Test.html">
 <meta property="og:site_name" content="Flint Canyon">
-<meta property="og:description" content="待更新">
+<meta property="og:description" content="Test模块提供一系列开发者指令，方便在不登陆服务器终端的情况下进行一些操作。此模块中所有指令只有开发者QQ（参见Deploy&#x2F;DevId）发送才有效，同时只有开发者QQ发起的加群邀请Bot才会同意。 TestsTest:DBConnection测试机器人到Redis数据库的连接情况。 InTest:DBConnection  Out已连接至云端数据库。云端数据库连接失败。  Test:">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-01-30T19:11:46.756Z">
-<meta property="article:modified_time" content="2022-01-30T19:11:46.756Z">
+<meta property="article:published_time" content="2022-04-06T08:39:03.589Z">
+<meta property="article:modified_time" content="2022-04-06T08:39:03.589Z">
 <meta property="article:author" content="Chen FAN">
 <meta name="twitter:card" content="summary">
   
@@ -78,7 +78,7 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 
 <div class="widgets">
 
-<div class="widget-wrap multi" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/index.html"><span class="toc-text">Home</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/deploy.html"><span class="toc-text">Deployment</span></a></div></div><div class="widget-header cap dis-select"><span class="name">通用指令</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Commands/TRPG.html"><span class="toc-text">TRPG</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Commands/Underwork.html"><span class="toc-text">Underwork</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Commands/Database.html"><span class="toc-text">Database</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Commands/Special.html"><span class="toc-text">Special</span></a></div></div><div class="widget-header cap dis-select"><span class="name">管理员指令</span></div><div class="widget-body fs14"><div class="doc-tree active"><a class="doc-tree-link active" href="/wiki/SleepyBot/AdminCommands/Test.html"><span class="toc-text">Test</span></a></div></div><div class="widget-header cap dis-select"><span class="name">数据库</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Database/Data.html"><span class="toc-text">Data Representation</span></a></div></div><div class="widget-header cap dis-select"><span class="name">开发者</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Developers/Developer.html"><span class="toc-text">Utilities</span></a></div></div></div>
+<div class="widget-wrap multi" id="toc"><div class="widget-header cap dis-select"><span class="name">本文目录</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/index.html"><span class="toc-text">Home</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/deploy.html"><span class="toc-text">Deployment</span></a></div></div><div class="widget-header cap dis-select"><span class="name">通用指令</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Commands/TRPG.html"><span class="toc-text">TRPG</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Commands/Underwork.html"><span class="toc-text">Underwork</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Commands/Database.html"><span class="toc-text">Database</span></a></div><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Commands/Special.html"><span class="toc-text">Special</span></a></div></div><div class="widget-header cap dis-select"><span class="name">管理员指令</span></div><div class="widget-body fs14"><div class="doc-tree active"><a class="doc-tree-link active" href="/wiki/SleepyBot/AdminCommands/Test.html"><span class="toc-text">Test</span></a><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Tests"><span class="toc-text">Tests</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Test-DBConnection"><span class="toc-text">Test:DBConnection</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Test-YabiAPI"><span class="toc-text">Test:YabiAPI</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Crawlers"><span class="toc-text">Crawlers</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Test-GCoreCrawler-PageRange-x3D-%E9%A1%B5%E6%95%B0"><span class="toc-text">Test:GCoreCrawler PageRange&#x3D;{页数}</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Test-GCoreCrawler-CacheInfo"><span class="toc-text">Test:GCoreCrawler CacheInfo</span></a></li></ol></li></ol></div></div><div class="widget-header cap dis-select"><span class="name">数据库</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Database/Data.html"><span class="toc-text">Data Representation</span></a></div></div><div class="widget-header cap dis-select"><span class="name">开发者</span></div><div class="widget-body fs14"><div class="doc-tree"><a class="doc-tree-link" href="/wiki/SleepyBot/Developers/Developer.html"><span class="toc-text">Utilities</span></a></div></div></div>
 
 <div class="widget-wrap" id="repo-info"><div class="widget-header cap dis-select"><span class="name">项目仓库</span></div><div class="widget-body fs14"><div class="items"><div class="line"></div><a class="item-link" title="https://github.com/fceek/SleepyBot" href="https://github.com/fceek/SleepyBot" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg><span>GitHub</span></a><div class="line"></div><a class="item-link" title="https://github.com/fceek/SleepyBot/releases" href="https://github.com/fceek/SleepyBot/releases" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path></svg><span>Releases</span></a><div class="line"></div><a class="item-link" title="https://github.com/fceek/SleepyBot/archive/refs/heads/main.zip" href="https://github.com/fceek/SleepyBot/archive/refs/heads/main.zip" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path fill-rule="evenodd" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg><span>Download</span></a><div class="line"></div><a class="item-link" title="https://github.com/fceek/SleepyBot/issues" href="https://github.com/fceek/SleepyBot/issues" target="_blank" rel="external nofollow noopener noreferrer"><svg aria-hidden="true" role="img" class="color-icon-primary" viewBox="0 0 16 16" width="1rem" height="1rem" fill="currentColor" style="display:inline-block;user-select:none;vertical-align:text-bottom;overflow:visible"><path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path><path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path></svg><span>Issues</span></a></div></div></div>
 
@@ -94,11 +94,27 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 
   
   
-<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" id="home" href="/">Flint Canyon</a><span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">Doc</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/SleepyBot/index.html">SleepyBot</a></div><div id="post-meta">更新于&nbsp;<time datetime="2022-01-30T19:11:46.756Z">30-01-2022</time></div></div>
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" id="home" href="/">Flint Canyon</a><span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">Doc</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/wiki/SleepyBot/index.html">SleepyBot</a></div><div id="post-meta">更新于&nbsp;<time datetime="2022-04-06T08:39:03.589Z">06-04-2022</time></div></div>
 
   <article class='content md wiki'>
   <h1 class="article-title"><span>Test</span></h1>
-  <p>待更新</p>
+  <p>Test模块提供一系列开发者指令，方便在不登陆服务器终端的情况下进行一些操作。<br>此模块中所有指令只有开发者QQ（参见Deploy&#x2F;DevId）发送才有效，同时只有开发者QQ发起的加群邀请Bot才会同意。</p>
+<h2 id="Tests"><a href="#Tests" class="headerlink" title="Tests"></a>Tests</h2><h3 id="Test-DBConnection"><a href="#Test-DBConnection" class="headerlink" title="Test:DBConnection"></a>Test:DBConnection</h3><p>测试机器人到Redis数据库的连接情况。</p>
+<div class="tag-plugin note" color="light"><div class="title"><strong>In</strong></div><div class="body"><p>Test:DBConnection</p></div></div>
+
+<div class="tag-plugin note" color="dark"><div class="title"><strong>Out</strong></div><div class="body"><p>已连接至云端数据库。</p><hr>云端数据库连接失败。</div></div>
+
+<h3 id="Test-YabiAPI"><a href="#Test-YabiAPI" class="headerlink" title="Test:YabiAPI"></a>Test:YabiAPI</h3><p>测试机器人到<a target="_blank" rel="noopener" href="https://yabi.fizzli.dev/home">亚逼日历</a>API的连接情况。</p>
+<div class="tag-plugin note" color="cyan"><div class="body"><p><strong>!TODO</strong> 目前缺少消息反馈，只能在命令行查看测试结果</p></div></div>
+
+<h2 id="Crawlers"><a href="#Crawlers" class="headerlink" title="Crawlers"></a>Crawlers</h2><h3 id="Test-GCoreCrawler-PageRange-x3D-页数"><a href="#Test-GCoreCrawler-PageRange-x3D-页数" class="headerlink" title="Test:GCoreCrawler PageRange&#x3D;{页数}"></a>Test:GCoreCrawler PageRange&#x3D;{页数}</h3><p>爬取并缓存机核电台前{页数}页的电台链接。</p>
+<div class="tag-plugin note" color="light"><div class="title"><strong>In</strong></div><div class="body"><p>Test:GCoreCrawler PageRange&#x3D;5</p></div></div>
+
+<div class="tag-plugin note" color="dark"><div class="title"><strong>Out</strong></div><div class="body"><p>This may take a while…<br>finished</p></div></div>
+
+<h3 id="Test-GCoreCrawler-CacheInfo"><a href="#Test-GCoreCrawler-CacheInfo" class="headerlink" title="Test:GCoreCrawler CacheInfo"></a>Test:GCoreCrawler CacheInfo</h3><p>爬取所有已缓存链接的机核电台的标题与简介。</p>
+<div class="tag-plugin note" color="cyan"><div class="body"><p><strong>!TODO</strong> 目前缺少消息反馈，只能在命令行查看测试结果</p></div></div>
+
 
   
 
