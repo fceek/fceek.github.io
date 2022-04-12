@@ -11,6 +11,13 @@ sidebar: [standalones]
 <!-- tab Music -->
 
 {% timeline %}
+<!-- node 10.04.22 -->
+<a class="moodboard-link" href="https://music.163.com/song?id=1218773">
+<img class="moodboard-img" src="moodboard/ManOfWords.png">
+Man of Words/Man of Music | David Bowie
+<br>
+Space Oddity
+</a>
 <!-- node 02.04.22 -->
 <a class="moodboard-link" href="https://music.163.com/song?id=1903635253">
 <img class="moodboard-img" src="moodboard/Sakayume.png">
