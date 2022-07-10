@@ -6,12 +6,12 @@ title: 一些怪东西
 <hr>
 <br>
 
-<a class="more-card-link spotlight" href="items/monopoly.html">
+<!-- <a class="more-card-link spotlight" href="items/monopoly.html">
 <div class="more-card">
     <p class="more-card-title">Jiawei's Monopoly</p>
     <p class="more-card-desc">为SE2022创建的临时专题页</p>
 </div>
-</a>
+</a> -->
 
 <a class="more-card-link" href="items/friends.html">
 <div class="more-card">
