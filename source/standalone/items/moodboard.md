@@ -11,6 +11,13 @@ sidebar: [standalones]
 <!-- tab Music -->
 
 {% timeline %}
+<!-- node 13.12.22 -->
+<a class="moodboard-link" href="https://open.spotify.com/track/0YwbtJsL5CMCnOJUxVJimu?si=9773a3f6794941d7">
+<img class="moodboard-img" src="moodboard/Summer.png">
+夏 / 狂热 | 苏打绿
+<br>
+无眠
+</a>
 <!-- node 10.04.22 -->
 <a class="moodboard-link" href="https://music.163.com/song?id=1218773">
 <img class="moodboard-img" src="moodboard/ManOfWords.png">
