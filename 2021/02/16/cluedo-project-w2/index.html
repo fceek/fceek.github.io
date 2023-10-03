@@ -65,6 +65,8 @@ gtag('config', 'G-L86GBFV0SN'); </script>
     
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@2.15.8/dist/waline.css">
+    
   
 </head>
 
@@ -402,26 +404,26 @@ gtag('config', 'G-L86GBFV0SN'); </script>
   <script>
   function load_comment(){
     if(!document.getElementById("waline_container"))return;
-    stellar.loadScript('//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', {defer:true}).then(function () {
+    stellar.loadScript('//cdn.jsdelivr.net/npm/@waline/client/dist/waline.js', {defer:true}).then(function () {
       const el = document.getElementById("waline_container");
       var path = el.getAttribute('comment_id');
       const placeholder = "";
       if (!path) {
         path = decodeURI(window.location.pathname);
       }
-      const serverURL = "https://waline-vercel-263xznfh6-fceek.vercel.app";
+      const serverURL = "https://waline-vercel-4qcy6zchk-fceek.vercel.app";
       const locale = {
         nick : "昵称*",
         mail : "邮箱*(不公开)",
         link : "网址",
         admin: "我！",
       }
-      var waline = new Waline({
+      Waline.init({
         el: '#waline_container',
         serverURL: serverURL,
         avatar: "robohash",
         placeholder: "",
-        emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],
+        emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/alus"],
         locale,
       });
     });

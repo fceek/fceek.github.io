@@ -59,6 +59,8 @@ gtag('config', 'G-L86GBFV0SN'); </script>
     
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@2.15.8/dist/waline.css">
+    
   
 </head>
 
@@ -121,7 +123,7 @@ gtag('config', 'G-L86GBFV0SN'); </script>
 <p>擅长挖坑不填。<br>最近因为有晚间直播干活的环节，有开始填坑了。</p>
 <p>擅长学而不精。<br>最近因为有晚间直播学习的环节，有开始学习了。</p>
 <p>并不是一个好人。</p>
-<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><p>Email: <a href="mailto:&#102;&#x63;&#x65;&#x65;&#x6b;&#57;&#54;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;">&#102;&#x63;&#x65;&#x65;&#x6b;&#57;&#54;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><p>Email: <a href="mailto:&#102;&#99;&#x65;&#101;&#x6b;&#57;&#54;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#102;&#99;&#x65;&#101;&#x6b;&#57;&#54;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a></p>
 
   
   </article>
@@ -293,26 +295,26 @@ gtag('config', 'G-L86GBFV0SN'); </script>
   <script>
   function load_comment(){
     if(!document.getElementById("waline_container"))return;
-    stellar.loadScript('//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', {defer:true}).then(function () {
+    stellar.loadScript('//cdn.jsdelivr.net/npm/@waline/client/dist/waline.js', {defer:true}).then(function () {
       const el = document.getElementById("waline_container");
       var path = el.getAttribute('comment_id');
       const placeholder = "";
       if (!path) {
         path = decodeURI(window.location.pathname);
       }
-      const serverURL = "https://waline-vercel-263xznfh6-fceek.vercel.app";
+      const serverURL = "https://waline-vercel-4qcy6zchk-fceek.vercel.app";
       const locale = {
         nick : "昵称*",
         mail : "邮箱*(不公开)",
         link : "网址",
         admin: "我！",
       }
-      var waline = new Waline({
+      Waline.init({
         el: '#waline_container',
         serverURL: serverURL,
         avatar: "robohash",
         placeholder: "",
-        emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],
+        emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/alus"],
         locale,
       });
     });
