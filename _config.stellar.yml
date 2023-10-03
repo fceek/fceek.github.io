@@ -16,7 +16,7 @@ sidebar:
 comments:
   service: waline
   waline:
-    serverURL: 'https://waline-vercel-263xznfh6-fceek.vercel.app'
+    serverURL: 'https://waline-vercel-4qcy6zchk-fceek.vercel.app'
     locale:
       nick: "昵称*"
       mail: "邮箱*(不公开)"
@@ -25,4 +25,4 @@ comments:
     placeholder:
     avatar: robohash
     emoji:
-      - 'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus'
+      - 'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/alus'
